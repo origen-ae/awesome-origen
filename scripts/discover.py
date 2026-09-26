@@ -80,7 +80,7 @@ def apply(candidates, verdicts, meta, projects, seen):
             rejected.append((name, v.reason))
             continue
         p = {"repo": name, "category": v.category, "kind": v.kind, "ring": "assess", "why": v.why,
-             "added_at": gh.today(), "source": "auto"}
+             "why_zh": v.why_zh, "added_at": gh.today(), "source": "auto"}
         if "full_name" in d:
             gh.apply_meta(p, d)
         projects.append(p)
@@ -92,11 +92,11 @@ def summarize(n, added, rejected, meta):
     lines = [f"本次评估 {n} 个候选，建议收录 **{len(added)}** 个。",
              "", "审阅方式：不想要的项目，直接在本 PR 中删掉 `data/projects.yaml` 里对应的行（它们仍记在 seen.yaml 中，不会再被推荐），然后运行 `python scripts/render.py` 并提交。", ""]
     if added:
-        lines += ["| 项目 | 分类 | 类型 | 为什么关注 | ⭐ |", "|---|---|---|---|---|"]
+        lines += ["| Project | Category | Kind | Why we care | 为什么关注 | ⭐ |", "|---|---|---|---|---|---|"]
         for p in sorted(added, key=lambda p: p["category"]):
             top, sub = meta["index"][p["category"]]
             lines.append(f"| [{p['repo']}](https://github.com/{p['repo']}) | {top['name']} / {sub['name']} | "
-                         f"{meta['kinds'][p['kind']]['name']} | {p['why']} | {p.get('stars', '-')} |")
+                         f"{meta['kinds'][p['kind']]['name']} | {p['why']} | {p['why_zh']} | {p.get('stars', '-')} |")
     if rejected:
         lines += ["", f"<details><summary>未收录 {len(rejected)} 个</summary>", ""]
         lines += [f"- [{n}](https://github.com/{n})：{r}" for n, r in rejected]
@@ -112,7 +112,7 @@ def main():
     ap.add_argument("--summary")
     args = ap.parse_args()
 
-    from classify import Verdicts, check, classify, system_prompt, to_candidate
+    from classify import OUTPUT_FORMAT, Verdicts, check, classify, system_prompt, to_candidate
     meta, projects, seen = load_meta(), load_projects(), load_seen()
 
     if args.apply:
@@ -136,7 +136,7 @@ def main():
         if args.export:
             Path(args.export).write_text(json.dumps({
                 "instructions": system_prompt(meta),
-                "output_format": '写一个 JSON 文件：{"items": [{"repo", "relevant", "category", "kind", "why", "reason"}, ...]}，每个候选一条',
+                "output_format": OUTPUT_FORMAT,
                 "candidates": inputs,
                 "raw": candidates,
             }, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")

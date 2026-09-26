@@ -13,9 +13,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CATEGORIES_FILE = ROOT / "data" / "categories.yaml"
 PROJECTS_FILE = ROOT / "data" / "projects.yaml"
 
-REQUIRED = ("repo", "category", "kind", "ring", "why")
+REQUIRED = ("repo", "category", "kind", "ring", "why", "why_zh")
 # 人工维护字段在前，脚本回填字段在后
-FIELD_ORDER = ("repo", "category", "kind", "ring", "why", "tags", "added_at", "source",
+FIELD_ORDER = ("repo", "category", "kind", "ring", "why", "why_zh", "tags", "added_at", "source",
                "stars", "pushed_at", "language", "license", "archived", "missing", "desc")
 
 

@@ -1,13 +1,13 @@
-name: 推荐项目
-description: 贴上 GitHub 链接，机器人会自动分类并收录
-title: "推荐项目"
+name: Recommend a project / 推荐项目
+description: Paste GitHub links and the bot will categorize and add them / 贴上 GitHub 链接，机器人会自动分类收录
+title: "Recommend a project / 推荐项目"
 labels: [add-project]
 body:
   - type: textarea
     id: links
     attributes:
-      label: 项目链接
-      description: 一行一个 GitHub 仓库链接，可以一次贴多个
+      label: Project links / 项目链接
+      description: One GitHub repository link per line; multiple links are fine / 一行一个 GitHub 仓库链接，可以一次贴多个
       placeholder: |
         https://github.com/owner/repo
     validations:
@@ -15,5 +15,5 @@ body:
   - type: textarea
     id: why
     attributes:
-      label: 为什么关注（可选）
-      description: 只贴一个链接时，这里填的内容会替代自动生成的说明
+      label: Why it matters (optional) / 为什么关注（可选）
+      description: For a single link, this replaces the generated description (English or Chinese; the other language is filled in automatically) / 只贴一个链接时，这里的内容会替代自动生成的说明，中英文都可以，另一种语言会自动补齐

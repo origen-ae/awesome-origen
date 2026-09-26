@@ -1,44 +1,46 @@
-# 贡献指南
+# Contributing
 
-## 添加项目
+[简体中文](CONTRIBUTING.zh-CN.md)
 
-**最简单的做法**：在本仓库新建 issue，选择 **推荐项目** 模板，贴上 GitHub 链接。机器人会自动分类收录：组织成员提交的直接进入 main，其他人提交的会开 PR 等待审核。
+## Adding a project
 
-**本地做法**：在本仓库中打开 Claude Code，执行 `/curate add https://github.com/owner/repo`，它会自动完成分类、查重、回填数据和生成 README。
+**Easiest:** open an issue in this repo with the **Recommend a project / 推荐项目** template and paste GitHub links. A scheduled job processes these daily: it categorizes the projects and opens a PR, and the issue closes automatically when the PR is merged.
 
-**手工做法**：
+**Locally:** open Claude Code in this repo and run `/curate add https://github.com/owner/repo`. It checks for duplicates, categorizes, writes the English and Chinese descriptions, fills in metadata and regenerates the README.
 
-1. 在 `data/projects.yaml` 末尾追加一行：
+**By hand:**
+
+1. Append a line to `data/projects.yaml`:
    ```yaml
-   - {repo: owner/name, category: 一级/二级, kind: tool, ring: assess, why: 我们为什么关注它, added_at: 2026-09-26}
+   - {repo: owner/name, category: top/child, kind: tool, ring: assess, why: Why we care in English, why_zh: 中文说明, added_at: 2026-09-26}
    ```
-   - `category` 的可选值见 `data/categories.yaml`
-   - `kind`：`frontier` 前沿 / `practice` 实践 / `tool` 工具
-   - `ring`：新项目一律填 `assess`；团队实际用过后再改为 `trial` / `adopt`
-2. 运行 `pip install -r requirements.txt`，然后：
+   - Valid `category` values are listed in `data/categories.yaml`
+   - `kind`: `frontier` / `practice` / `tool`
+   - `ring`: always `assess` for new projects; change to `trial` / `adopt` once the team has actually used it
+   - `why` is English, `why_zh` is Chinese; both are required
+2. Run `pip install -r requirements.txt`, then:
    ```
    python scripts/refresh.py --only owner/name
    python scripts/render.py
    ```
-3. 提交 `data/`、`README.md`、`docs/` 并开 PR。CI 会校验数据，并检查 README 是否已重新生成。
+3. Commit `data/`, `README*.md` and `docs/`, then open a PR. CI validates the data and checks that the README was regenerated.
 
-## 收录标准
+## Inclusion criteria
 
-- 与我们的方向相关：前沿技术、工程实践、工具
-- `why` 要写出我们自己的判断，不要照抄项目简介
-- 不 fork 到组织里。只有需要二次开发、要给上游提 PR，或者需要备份生产依赖时才 fork 或 mirror
+- Relevant to our focus areas: frontier technologies, engineering practices, tools
+- The description states our own judgment, not the project's tagline. Keep it to 12 English words and 30 Chinese characters
+- Don't fork projects into the org. Fork or mirror only when we modify the code, contribute upstream, or need a backup of a production dependency
 
-## 修改分类
+## Changing categories
 
-编辑 `data/categories.yaml`。一级分类尽量不超过 8 个。给已有分类改 id 时，要同步修改 projects.yaml 中引用它的项目。
+Edit `data/categories.yaml`. Every category needs English (`name` / `desc`) and Chinese (`name_zh` / `desc_zh`) text. Keep top-level categories to 8 or fewer. When renaming a category id, update the projects in projects.yaml that reference it.
 
-## 自动化一览
+## Automation
 
-| Workflow | 触发时机 | 作用 |
+| Job | When | What it does |
 |---|---|---|
-| `add-from-issue` | 提交"推荐项目" issue，或手动运行 | 链接 → 模型分类 → 收录 |
-| `discover` | 每周一 | 按 `data/sources.yaml` 搜索 → 模型筛选 → 开 PR，合并即表示接受 |
-| `refresh` | 每周一 | 刷新 stars、活跃度、归档状态 |
-| `validate` | PR / push | 校验数据，并检查 README 是否已重新生成 |
+| Claude Code routine (`/curate routine`) | Daily | Processes recommendation issues; on Mondays also discovers new projects via `data/sources.yaml`; opens a PR when something changed |
+| `refresh` workflow | Mondays | Refreshes stars, activity and archived status |
+| `validate` workflow | PR / push | Validates data and checks the README is regenerated |
 
-需要在仓库的 Settings → Secrets 中配置 `ANTHROPIC_API_KEY`。
+The `discover` and `add-from-issue` workflows are disabled by default. You can enable them as an alternative to the routine once the `ANTHROPIC_API_KEY` or `CLAUDE_CODE_OAUTH_TOKEN` secret is configured.

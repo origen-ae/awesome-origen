@@ -41,6 +41,7 @@ jobs:
             data/projects.yaml
             data/seen.yaml
             README.md
+            README.zh-CN.md
             docs/
           commit-message: "feat: 每周发现 ${{ steps.date.outputs.week }}"
           title: "每周发现 ${{ steps.date.outputs.week }}"
