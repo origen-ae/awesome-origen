@@ -1,0 +1,96 @@
+name: add-from-issue
+
+# 通过"推荐项目" issue 表单提交链接后自动收录：
+#   组织成员 / 协作者提交的直接提交到 main；其他人提交的开 PR 等待审核。
+# 也可以在 Actions 页面手动运行，填入链接。
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      links:
+        description: GitHub 链接，多个用空格分隔
+        required: true
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: curate-write   # 与其他写入 data/ 的任务串行，避免冲突
+  cancel-in-progress: false
+
+jobs:
+  add:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'add-project')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # 二选一：API key，或 `claude setup-token` 生成的订阅 token（此时用 Claude Code CLI 分类）
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      # 用户输入只经环境变量传给脚本，不直接拼进 shell 命令
+      ISSUE_BODY: ${{ github.event.issue.body }}
+      LINKS: ${{ inputs.links }}
+      ISSUE: ${{ github.event.issue.number }}
+      TRUSTED: ${{ github.event_name == 'workflow_dispatch' || contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - if: env.ANTHROPIC_API_KEY == ''
+        run: npm install -g @anthropic-ai/claude-code
+
+      - id: add
+        run: |
+          set +e
+          if [ -n "$ISSUE" ]; then
+            python scripts/add.py --issue --summary summary.md "$ISSUE_BODY"
+          else
+            python scripts/add.py --summary summary.md $LINKS
+          fi
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ "$code" -le 2 ]   # 0 有新增，2 没有新增，其他值为出错
+
+      - if: steps.add.outputs.code == '0'
+        run: python scripts/render.py
+
+      # 可信提交者：直接提交到 main
+      - if: steps.add.outputs.code == '0' && env.TRUSTED == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add data/projects.yaml README.md docs/
+          git commit -m "feat: 收录项目${ISSUE:+（#$ISSUE）}"
+          git push
+
+      # 其他人：开 PR
+      - if: steps.add.outputs.code == '0' && env.TRUSTED != 'true'
+        id: pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: curate/issue-${{ github.event.issue.number }}
+          add-paths: |
+            data/projects.yaml
+            README.md
+            docs/
+          commit-message: "feat: 收录项目（#${{ github.event.issue.number }}）"
+          title: "收录项目（#${{ github.event.issue.number }}）"
+          body-path: summary.md
+
+      - if: always() && env.ISSUE != '' && steps.add.outputs.code != ''
+        run: |
+          {
+            cat summary.md
+            echo
+            if [ "${{ steps.add.outputs.code }}" != "0" ]; then echo "没有新增项目。"
+            elif [ "$TRUSTED" = "true" ]; then echo "已直接收录到 [README](../blob/main/README.md)。雷达默认标为「评估」，团队实际用过后可以改为 trial / adopt。"
+            else echo "已创建 PR 等待审核：${{ steps.pr.outputs.pull-request-url }}"; fi
+          } > comment.md
+          gh issue comment "$ISSUE" --body-file comment.md
+          if [ "${{ steps.add.outputs.code }}" != "0" ] || [ "$TRUSTED" = "true" ]; then gh issue close "$ISSUE"; fi

@@ -1,0 +1,49 @@
+name: discover
+
+# 每周一按 data/sources.yaml 搜索新项目，由模型筛选、分类后开 PR；合并这个 PR 即表示接受收录
+on:
+  schedule:
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: curate-write
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # 二选一：API key，或 `claude setup-token` 生成的订阅 token（此时用 Claude Code CLI 分类）
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - if: env.ANTHROPIC_API_KEY == ''
+        run: npm install -g @anthropic-ai/claude-code
+      - run: python scripts/discover.py --summary "$RUNNER_TEMP/summary.md"
+      - run: python scripts/render.py
+      - run: echo "week=$(date +%G-W%V)" >> "$GITHUB_OUTPUT"
+        id: date
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/discover
+          add-paths: |
+            data/projects.yaml
+            data/seen.yaml
+            README.md
+            docs/
+          commit-message: "feat: 每周发现 ${{ steps.date.outputs.week }}"
+          title: "每周发现 ${{ steps.date.outputs.week }}"
+          body-path: ${{ runner.temp }}/summary.md
+          labels: discover
+          delete-branch: true

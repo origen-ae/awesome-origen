@@ -1,0 +1,61 @@
+# 领域分类（决定 README 章节）。一级 ≤ 8 个，二级按需增加。
+# 新增分类后，projects.yaml 里的 category 用 "一级/二级" 引用。
+kinds:
+  frontier: { name: 前沿, emoji: "🔭", desc: 前沿模型、研究代码、论文合集 }
+  practice: { name: 实践, emoji: "📐", desc: 工程实践、Cookbook、参考实现、教程 }
+  tool:     { name: 工具, emoji: "🛠", desc: 可直接使用的框架、平台、库 }
+
+rings:
+  adopt:  { name: 采用, desc: 已在项目中使用，推荐默认选型 }
+  trial:  { name: 试用, desc: 值得在真实项目中小范围试用 }
+  assess: { name: 评估, desc: 值得关注和调研，尚未实践 }
+  hold:   { name: 暂缓, desc: 不再推荐（停更、被替代或不适配） }
+
+categories:
+  - id: ai-native
+    name: AI Native
+    desc: Agent、LLM 应用工程与 AI 基础设施
+    children:
+      - { id: agent-framework, name: Agent 框架与编排 }
+      - { id: coding-agent,    name: AI 编程与自主 Agent }
+      - { id: mcp,             name: MCP 与工具生态 }
+      - { id: app-platform,    name: LLM 应用平台 }
+      - { id: inference,       name: 推理与部署 }
+      - { id: llmops,          name: 观测、评测与网关 }
+      - { id: practice,        name: 工程实践与学习资料 }
+
+  - id: ontology
+    name: Ontology 与知识图谱
+    desc: 本体建模、语义网、图数据库、GraphRAG
+    children:
+      - { id: modeling, name: 本体建模与语义网 }
+      - { id: graph-db, name: 图数据库与三元组存储 }
+      - { id: graphrag, name: GraphRAG 与 Agent 记忆 }
+
+  - id: vlm
+    name: VLM 视觉语言模型
+    desc: 多模态大模型、视觉基础模型、训练与评测
+    children:
+      - { id: models,     name: 开源 VLM 模型 }
+      - { id: foundation, name: 视觉基础模型（分割 / 检测） }
+      - { id: train-eval, name: 训练、微调与评测 }
+      - { id: survey,     name: 论文与资料合集 }
+
+  - id: remote-sensing
+    name: 遥感与地理空间
+    desc: 遥感基础模型、遥感智能解译、地理空间数据基础设施
+    children:
+      - { id: foundation, name: 遥感基础模型与遥感 VLM }
+      - { id: dl-tools,   name: 遥感深度学习工具 }
+      - { id: geo-infra,  name: 地理空间数据基础设施 }
+      - { id: survey,     name: 论文与资料合集 }
+
+  - id: knowledge-base
+    name: 知识库与 RAG
+    desc: RAG 引擎、文档解析、向量数据库、知识库应用
+    children:
+      - { id: rag-engine,  name: RAG 引擎与框架 }
+      - { id: doc-parsing, name: 文档解析 }
+      - { id: vector-db,   name: 向量数据库 }
+      - { id: kb-app,      name: 知识库应用 }
+      - { id: practice,    name: RAG 工程实践 }

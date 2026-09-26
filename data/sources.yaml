@@ -1,0 +1,33 @@
+# 定时发现用的 GitHub 搜索条件（语法同 https://github.com/search?type=repositories）。
+# {Nd} 会替换成 N 天前的日期，例如 pushed:>{30d} 表示最近 30 天内有推送。
+# 每条查询取按 star 排序的前 per_query 个结果，去掉已收录和近期评估过的，再交给模型判断。
+per_query: 10
+max_candidates: 40      # 每次运行最多评估的候选数（控制模型调用成本）
+seen_ttl_days: 180      # 被拒绝的候选多少天内不再重复评估
+
+queries:
+  ai-native:
+    - "topic:ai-agents stars:>1000 pushed:>{30d}"
+    - "topic:mcp stars:>500 created:>{180d}"
+    - "topic:llm-inference stars:>1000 pushed:>{30d}"
+    - "topic:llmops stars:>500 pushed:>{30d}"
+    - "topic:llm stars:>2000 created:>{90d}"
+  ontology:
+    - "topic:ontology stars:>100 pushed:>{90d}"
+    - "topic:knowledge-graph stars:>500 pushed:>{60d}"
+    - "graphrag in:name,description stars:>300 created:>{365d}"
+    - "topic:semantic-web stars:>200 pushed:>{90d}"
+  vlm:
+    - "topic:vision-language-model stars:>500 pushed:>{60d}"
+    - "topic:multimodal-large-language-models stars:>500 created:>{180d}"
+    - "topic:vlm stars:>500 created:>{180d}"
+  remote-sensing:
+    - "topic:remote-sensing stars:>200 pushed:>{90d}"
+    - "topic:earth-observation stars:>200 pushed:>{90d}"
+    - "topic:geospatial stars:>1000 pushed:>{60d}"
+    - "topic:satellite-imagery stars:>300 pushed:>{90d}"
+  knowledge-base:
+    - "topic:rag stars:>1000 pushed:>{30d}"
+    - "topic:document-parsing stars:>500 pushed:>{60d}"
+    - "topic:vector-database stars:>2000 pushed:>{30d}"
+    - "topic:knowledge-base stars:>1000 pushed:>{30d}"

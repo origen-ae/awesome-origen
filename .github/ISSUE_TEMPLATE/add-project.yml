@@ -1,0 +1,19 @@
+name: 推荐项目
+description: 贴上 GitHub 链接，机器人会自动分类并收录
+title: "推荐项目"
+labels: [add-project]
+body:
+  - type: textarea
+    id: links
+    attributes:
+      label: 项目链接
+      description: 一行一个 GitHub 仓库链接，可以一次贴多个
+      placeholder: |
+        https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么关注（可选）
+      description: 只贴一个链接时，这里填的内容会替代自动生成的说明

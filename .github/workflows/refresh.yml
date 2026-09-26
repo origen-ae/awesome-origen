@@ -1,0 +1,38 @@
+name: refresh
+
+# 每周一刷新 GitHub 元数据并重新生成 README，有变化时自动开 PR
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: curate-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/refresh.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python scripts/render.py
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/refresh
+          commit-message: "chore: 刷新项目元数据"
+          title: "chore: 每周刷新项目元数据"
+          body: |
+            自动刷新 stars / 最近推送 / 归档状态。
+            请留意标记为 ⚠️已归档、❌失效、💤一年未更新 的项目，考虑调整为 hold 或移除。
+          delete-branch: true

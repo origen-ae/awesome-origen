@@ -1,0 +1,6 @@
+__pycache__/
+work.json
+verdicts.json
+issue-*.md
+*-summary.md
+summary.md

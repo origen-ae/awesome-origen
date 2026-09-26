@@ -1,0 +1,71 @@
+- {repo: langchain-ai/langgraph, category: ai-native/agent-framework, kind: tool, ring: assess, why: 有状态、可持久化的 Agent 图编排, added_at: '2026-09-26', stars: 42299, pushed_at: '2026-09-26', language: Python, license: MIT, desc: Build resilient agents.}
+- {repo: openai/openai-agents-python, category: ai-native/agent-framework, kind: tool, ring: assess, why: 轻量多 Agent 框架，handoff / guardrail 设计值得参考, added_at: '2026-09-26'}
+- {repo: microsoft/autogen, category: ai-native/agent-framework, kind: tool, ring: assess, why: 多 Agent 对话式协作框架, added_at: '2026-09-26'}
+- {repo: crewAIInc/crewAI, category: ai-native/agent-framework, kind: tool, ring: assess, why: 基于角色的多 Agent 协作, added_at: '2026-09-26'}
+- {repo: anthropics/claude-code, category: ai-native/coding-agent, kind: tool, ring: assess, why: 终端 AI 编程 Agent，skill / hook / MCP 扩展体系, added_at: '2026-09-26'}
+- {repo: OpenHands/OpenHands, category: ai-native/coding-agent, kind: tool, ring: assess, why: 开源自主软件工程 Agent, added_at: '2026-09-26', stars: 89176, pushed_at: '2026-09-26', language: TypeScript, license: MIT, desc: '🙌 OpenHands: AI-Driven Development'}
+- {repo: browser-use/browser-use, category: ai-native/coding-agent, kind: tool, ring: assess, why: 让 Agent 操作浏览器, added_at: '2026-09-26'}
+- {repo: modelcontextprotocol/servers, category: ai-native/mcp, kind: tool, ring: assess, why: MCP 官方参考 Server 集合, added_at: '2026-09-26'}
+- {repo: langgenius/dify, category: ai-native/app-platform, kind: tool, ring: assess, why: 可视化 LLM 应用 / 工作流平台, added_at: '2026-09-26'}
+- {repo: n8n-io/n8n, category: ai-native/app-platform, kind: tool, ring: assess, why: 工作流自动化，内置 AI 节点, added_at: '2026-09-26'}
+- {repo: vllm-project/vllm, category: ai-native/inference, kind: tool, ring: assess, why: 高吞吐 LLM 推理服务, added_at: '2026-09-26'}
+- {repo: sgl-project/sglang, category: ai-native/inference, kind: tool, ring: assess, why: 高性能推理框架，结构化输出强, added_at: '2026-09-26'}
+- {repo: ollama/ollama, category: ai-native/inference, kind: tool, ring: assess, why: 本地模型一键运行, added_at: '2026-09-26'}
+- {repo: BerriAI/litellm, category: ai-native/llmops, kind: tool, ring: assess, why: 统一多模型调用的网关, added_at: '2026-09-26'}
+- {repo: langfuse/langfuse, category: ai-native/llmops, kind: tool, ring: assess, why: LLM 调用链观测、评测与 Prompt 管理, added_at: '2026-09-26'}
+- {repo: anthropics/claude-cookbooks, category: ai-native/practice, kind: practice, ring: assess, why: Claude 官方工程实践示例, added_at: '2026-09-26', stars: 52992, pushed_at: '2026-09-24', language: Jupyter Notebook, license: MIT, desc: A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.}
+- {repo: openai/openai-cookbook, category: ai-native/practice, kind: practice, ring: assess, why: OpenAI 官方工程实践示例, added_at: '2026-09-26'}
+- {repo: dair-ai/Prompt-Engineering-Guide, category: ai-native/practice, kind: practice, ring: assess, why: Prompt / Context 工程指南, added_at: '2026-09-26'}
+- {repo: mlabonne/llm-course, category: ai-native/practice, kind: practice, ring: assess, why: LLM 系统学习路线, added_at: '2026-09-26'}
+
+- {repo: protegeproject/protege, category: ontology/modeling, kind: tool, ring: assess, why: 经典 OWL 本体编辑器, added_at: '2026-09-26'}
+- {repo: linkml/linkml, category: ontology/modeling, kind: tool, ring: assess, why: 用 YAML 定义数据模型 / 本体，可生成多种 schema, added_at: '2026-09-26'}
+- {repo: RDFLib/rdflib, category: ontology/modeling, kind: tool, ring: assess, why: Python RDF / SPARQL 基础库, added_at: '2026-09-26'}
+- {repo: apache/jena, category: ontology/graph-db, kind: tool, ring: assess, why: Java 语义网框架 + Fuseki 三元组存储, added_at: '2026-09-26'}
+- {repo: oxigraph/oxigraph, category: ontology/graph-db, kind: tool, ring: assess, why: Rust 实现的轻量 SPARQL 图数据库, added_at: '2026-09-26'}
+- {repo: neo4j/neo4j, category: ontology/graph-db, kind: tool, ring: assess, why: 主流属性图数据库, added_at: '2026-09-26'}
+- {repo: microsoft/graphrag, category: ontology/graphrag, kind: frontier, ring: assess, why: 基于知识图谱的 RAG, added_at: '2026-09-26'}
+- {repo: HKUDS/LightRAG, category: ontology/graphrag, kind: frontier, ring: assess, why: 轻量 GraphRAG，支持增量更新, added_at: '2026-09-26'}
+- {repo: OpenSPG/KAG, category: ontology/graphrag, kind: frontier, ring: assess, why: 知识增强生成，逻辑推理问答, added_at: '2026-09-26'}
+- {repo: getzep/graphiti, category: ontology/graphrag, kind: tool, ring: assess, why: 时序知识图谱，适合做 Agent 记忆, added_at: '2026-09-26'}
+- {repo: topoteretes/cognee, category: ontology/graphrag, kind: tool, ring: assess, why: 知识图谱式 Agent 记忆层, added_at: '2026-09-26'}
+
+- {repo: QwenLM/Qwen3-VL, category: vlm/models, kind: frontier, ring: assess, why: 通义千问多模态模型, added_at: '2026-09-26', stars: 19998, pushed_at: '2026-01-30', language: Jupyter Notebook, license: Apache-2.0, desc: 'Qwen3-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud.'}
+- {repo: OpenGVLab/InternVL, category: vlm/models, kind: frontier, ring: assess, why: 书生多模态模型系列, added_at: '2026-09-26'}
+- {repo: OpenBMB/MiniCPM-V, category: vlm/models, kind: frontier, ring: assess, why: 端侧可部署的 VLM, added_at: '2026-09-26', stars: 26459, pushed_at: '2026-09-08', language: Python, license: Apache-2.0, desc: A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone}
+- {repo: deepseek-ai/DeepSeek-VL2, category: vlm/models, kind: frontier, ring: assess, why: MoE 架构 VLM, added_at: '2026-09-26'}
+- {repo: haotian-liu/LLaVA, category: vlm/models, kind: frontier, ring: assess, why: 视觉指令微调的奠基工作, added_at: '2026-09-26'}
+- {repo: facebookresearch/sam2, category: vlm/foundation, kind: frontier, ring: assess, why: 图像与视频的通用分割, added_at: '2026-09-26'}
+- {repo: IDEA-Research/GroundingDINO, category: vlm/foundation, kind: frontier, ring: assess, why: 开放词汇目标检测, added_at: '2026-09-26'}
+- {repo: hiyouga/LLaMA-Factory, category: vlm/train-eval, kind: tool, ring: assess, why: 一站式 LLM / VLM 微调, added_at: '2026-09-26'}
+- {repo: modelscope/ms-swift, category: vlm/train-eval, kind: tool, ring: assess, why: 魔搭大模型 / 多模态训练框架, added_at: '2026-09-26'}
+- {repo: open-compass/VLMEvalKit, category: vlm/train-eval, kind: tool, ring: assess, why: VLM 评测工具集, added_at: '2026-09-26'}
+- {repo: BradyFU/Awesome-Multimodal-Large-Language-Models, category: vlm/survey, kind: frontier, ring: assess, why: 多模态大模型论文追踪, added_at: '2026-09-26'}
+
+- {repo: mbzuai-oryx/GeoChat, category: remote-sensing/foundation, kind: frontier, ring: assess, why: 遥感领域 VLM, added_at: '2026-09-26'}
+- {repo: ChenDelong1999/RemoteCLIP, category: remote-sensing/foundation, kind: frontier, ring: assess, why: 遥感视觉-语言基础模型, added_at: '2026-09-26'}
+- {repo: IBM/terratorch, category: remote-sensing/foundation, kind: tool, ring: assess, why: 地理空间基础模型（Prithvi 等）微调工具, added_at: '2026-09-26'}
+- {repo: torchgeo/torchgeo, category: remote-sensing/dl-tools, kind: tool, ring: assess, why: PyTorch 地理空间数据集 / 采样器 / 模型, added_at: '2026-09-26', stars: 4190, pushed_at: '2026-09-25', language: Python, license: MIT, desc: 'TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data'}
+- {repo: opengeos/segment-geospatial, category: remote-sensing/dl-tools, kind: tool, ring: assess, why: SAM 用于遥感影像分割, added_at: '2026-09-26'}
+- {repo: open-mmlab/mmrotate, category: remote-sensing/dl-tools, kind: tool, ring: assess, why: 旋转目标检测（遥感常用）, added_at: '2026-09-26'}
+- {repo: OSGeo/gdal, category: remote-sensing/geo-infra, kind: tool, ring: assess, why: 栅格 / 矢量数据处理基石, added_at: '2026-09-26'}
+- {repo: rasterio/rasterio, category: remote-sensing/geo-infra, kind: tool, ring: assess, why: Pythonic 栅格数据读写, added_at: '2026-09-26'}
+- {repo: stac-utils/pystac, category: remote-sensing/geo-infra, kind: tool, ring: assess, why: STAC 时空资产目录标准, added_at: '2026-09-26'}
+- {repo: developmentseed/titiler, category: remote-sensing/geo-infra, kind: tool, ring: assess, why: 动态瓦片服务（COG / STAC）, added_at: '2026-09-26'}
+- {repo: opengeos/leafmap, category: remote-sensing/geo-infra, kind: tool, ring: assess, why: Notebook 里的交互式地图分析, added_at: '2026-09-26'}
+- {repo: satellite-image-deep-learning/techniques, category: remote-sensing/survey, kind: practice, ring: assess, why: 卫星影像深度学习技术汇总, added_at: '2026-09-26'}
+- {repo: Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models, category: remote-sensing/survey, kind: frontier, ring: assess, why: 遥感基础模型论文合集, added_at: '2026-09-26'}
+
+- {repo: infiniflow/ragflow, category: knowledge-base/rag-engine, kind: tool, ring: assess, why: 深度文档理解的 RAG 引擎, added_at: '2026-09-26'}
+- {repo: run-llama/llama_index, category: knowledge-base/rag-engine, kind: tool, ring: assess, why: 数据接入与检索框架, added_at: '2026-09-26'}
+- {repo: deepset-ai/haystack, category: knowledge-base/rag-engine, kind: tool, ring: assess, why: 生产级 RAG / 搜索管线, added_at: '2026-09-26'}
+- {repo: opendatalab/MinerU, category: knowledge-base/doc-parsing, kind: tool, ring: assess, why: PDF → Markdown，公式 / 表格识别强, added_at: '2026-09-26'}
+- {repo: docling-project/docling, category: knowledge-base/doc-parsing, kind: tool, ring: assess, why: IBM 文档解析与转换, added_at: '2026-09-26'}
+- {repo: microsoft/markitdown, category: knowledge-base/doc-parsing, kind: tool, ring: assess, why: Office / PDF 等文件转 Markdown, added_at: '2026-09-26'}
+- {repo: PaddlePaddle/PaddleOCR, category: knowledge-base/doc-parsing, kind: tool, ring: assess, why: 多语种 OCR 与版面分析, added_at: '2026-09-26'}
+- {repo: milvus-io/milvus, category: knowledge-base/vector-db, kind: tool, ring: assess, why: 分布式向量数据库, added_at: '2026-09-26'}
+- {repo: qdrant/qdrant, category: knowledge-base/vector-db, kind: tool, ring: assess, why: Rust 向量数据库，过滤检索强, added_at: '2026-09-26'}
+- {repo: open-webui/open-webui, category: knowledge-base/kb-app, kind: tool, ring: assess, why: 自托管 AI 对话 + 知识库界面, added_at: '2026-09-26'}
+- {repo: Mintplex-Labs/anything-llm, category: knowledge-base/kb-app, kind: tool, ring: assess, why: 一体化私有知识库应用, added_at: '2026-09-26'}
+- {repo: labring/FastGPT, category: knowledge-base/kb-app, kind: tool, ring: assess, why: 知识库问答 + 工作流编排, added_at: '2026-09-26'}
+- {repo: NirDiamant/RAG_Techniques, category: knowledge-base/practice, kind: practice, ring: assess, why: RAG 进阶技巧 Notebook 合集, added_at: '2026-09-26'}
