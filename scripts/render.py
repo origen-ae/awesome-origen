@@ -127,7 +127,7 @@ def main():
                 stale.append(path.relative_to(ROOT).as_posix())
         else:
             path.parent.mkdir(exist_ok=True)
-            path.write_text(content, encoding="utf-8")
+            path.write_text(content, encoding="utf-8", newline="\n")
     if stale:
         print(f"以下文件与数据不一致，请运行 python scripts/render.py 后提交：{stale}", file=sys.stderr)
         sys.exit(1)

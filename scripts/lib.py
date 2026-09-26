@@ -6,8 +6,8 @@ from pathlib import Path
 import yaml
 
 # Windows 控制台默认 GBK，统一输出 UTF-8
-sys.stdout.reconfigure(encoding="utf-8")
-sys.stderr.reconfigure(encoding="utf-8")
+sys.stdout.reconfigure(encoding="utf-8", newline="\n")
+sys.stderr.reconfigure(encoding="utf-8", newline="\n")
 
 ROOT = Path(__file__).resolve().parent.parent
 CATEGORIES_FILE = ROOT / "data" / "categories.yaml"
@@ -77,4 +77,4 @@ def save_projects(projects, meta):
         item.update({k: v for k, v in p.items() if k not in item and v is not None})
         lines.append(yaml.safe_dump([item], default_flow_style=None, allow_unicode=True,
                                     sort_keys=False, width=100000).rstrip())
-    PROJECTS_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    PROJECTS_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

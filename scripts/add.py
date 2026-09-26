@@ -75,7 +75,7 @@ def main():
             "instructions": system_prompt(meta) + "\n\n这些链接是用户主动推荐的，除非明显和收录方向无关，否则应判为相关。",
             "output_format": '写一个 JSON 文件：{"items": [{"repo", "relevant", "category", "kind", "why", "reason"}, ...]}，每个候选一条',
             "candidates": [to_candidate(d, gh.readme(d["full_name"])) for d in fetched],
-        }, ensure_ascii=False, indent=1), encoding="utf-8")
+        }, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
         print("\n".join(lines + [f"已写出 {args.export}（{len(fetched)} 个待判断）"]))
         return
     if fetched and args.apply:
@@ -121,7 +121,7 @@ def main():
     summary = "\n".join(lines)
     print(summary)
     if args.summary:
-        Path(args.summary).write_text(summary + "\n", encoding="utf-8")
+        Path(args.summary).write_text(summary + "\n", encoding="utf-8", newline="\n")
     sys.exit(0 if added else 2)
 
 

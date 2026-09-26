@@ -42,7 +42,7 @@ def load_seen():
 def save_seen(seen):
     lines = [yaml.safe_dump([s], default_flow_style=None, allow_unicode=True, sort_keys=False, width=100000).rstrip()
              for s in sorted(seen.values(), key=lambda s: s["repo"].lower())]
-    SEEN_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    SEEN_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
 
 def collect(cfg, skip):
@@ -139,7 +139,7 @@ def main():
                 "output_format": '写一个 JSON 文件：{"items": [{"repo", "relevant", "category", "kind", "why", "reason"}, ...]}，每个候选一条',
                 "candidates": inputs,
                 "raw": candidates,
-            }, ensure_ascii=False, indent=1), encoding="utf-8")
+            }, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
             print(f"已写出 {args.export}")
             return
         verdicts = classify(inputs, meta)
@@ -150,7 +150,7 @@ def main():
     summary = summarize(len(verdicts), added, rejected, meta)
     print(summary)
     if args.summary:
-        Path(args.summary).write_text(summary + "\n", encoding="utf-8")
+        Path(args.summary).write_text(summary + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
