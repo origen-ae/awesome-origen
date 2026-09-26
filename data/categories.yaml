@@ -14,6 +14,8 @@ rings:
 
 categories:
   - id: ai-native
+    short: AI Native
+    short_zh: AI Native
     name: AI Native
     name_zh: AI Native
     desc: Agents, LLM application engineering and AI infrastructure
@@ -28,6 +30,8 @@ categories:
       - { id: practice,        name: Engineering Practices & Learning, name_zh: 工程实践与学习资料 }
 
   - id: ontology
+    short: Ontology
+    short_zh: 本体图谱
     name: Ontology & Knowledge Graphs
     name_zh: Ontology 与知识图谱
     desc: Ontology modeling, semantic web, graph databases, GraphRAG
@@ -38,6 +42,8 @@ categories:
       - { id: graphrag, name: GraphRAG & Agent Memory,          name_zh: GraphRAG 与 Agent 记忆 }
 
   - id: vlm
+    short: VLM
+    short_zh: VLM
     name: Vision-Language Models
     name_zh: VLM 视觉语言模型
     desc: Multimodal LLMs, vision foundation models, training and evaluation
@@ -49,6 +55,8 @@ categories:
       - { id: survey,     name: Papers & Resource Collections,            name_zh: 论文与资料合集 }
 
   - id: remote-sensing
+    short: Remote Sensing
+    short_zh: 遥感
     name: Remote Sensing & Geospatial
     name_zh: 遥感与地理空间
     desc: Remote sensing foundation models, intelligent interpretation, geospatial data infrastructure
@@ -60,6 +68,8 @@ categories:
       - { id: survey,     name: Papers & Resource Collections,    name_zh: 论文与资料合集 }
 
   - id: knowledge-base
+    short: Knowledge & RAG
+    short_zh: 知识库与 RAG
     name: Knowledge Bases & RAG
     name_zh: 知识库与 RAG
     desc: RAG engines, document parsing, vector databases, knowledge base apps

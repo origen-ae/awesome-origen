@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Origen</title>
+<meta name="description" content="Open-source projects Origen follows across AI Native, ontology, vision-language models, remote sensing and knowledge bases — and how far we trust them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #E9EDF1;
+  --paper-2: #F5F7F9;
+  --ink: #1A2633;
+  --ink-2: #4B5A69;
+  --grid: #AEBBC8;
+  --grid-2: #CDD6DF;
+  --a1: #B3363F;  /* 植被红 */
+  --a2: #157A85;  /* 水体青 */
+  --a3: #9C6F1F;  /* 裸土赭 */
+  --a4: #634A8E;  /* 城区紫 */
+  --a5: #3E6A97;  /* 云层蓝灰 */
+  --focus: #157A85;
+  --font: "Bricolage Grotesque", "Noto Sans SC", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #131B23; --paper-2: #1A242E; --ink: #E4E9EE; --ink-2: #9AA8B6;
+    --grid: #3A4958; --grid-2: #26323E;
+    --a1: #E0636B; --a2: #3FB3BE; --a3: #D9A54A; --a4: #9C85C9; --a5: #6F9CCB; --focus: #3FB3BE;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font); font-size: 16px; line-height: 1.5;
+  font-variation-settings: "opsz" 16;
+}
+:lang(zh) body, html:lang(zh) { line-height: 1.65; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .wrap { padding: 0 32px; } }
+
+/* 顶栏 */
+.top { display: flex; align-items: center; gap: 16px; padding: 20px 0; flex-wrap: wrap; }
+.brand { font-weight: 700; font-size: 18px; text-decoration: none; letter-spacing: -0.01em; }
+.brand span { font-weight: 400; color: var(--ink-2); }
+.top nav { margin-left: auto; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.top nav a { text-decoration: none; color: var(--ink-2); font-size: 15px; }
+.top nav a:hover { color: var(--ink); text-decoration: underline; }
+.lang { display: inline-flex; border: 1px solid var(--grid); border-radius: 999px; overflow: hidden; }
+.lang button { font: inherit; font-size: 14px; border: 0; background: transparent; color: var(--ink-2); padding: 4px 12px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+
+/* 首屏：雷达 */
+.intro { padding: 16px 0 8px; }
+.hero { display: grid; gap: 32px; padding: 0 0 48px; }
+@media (min-width: 980px) { .hero { grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr); align-items: start; } }
+h1 {
+  font-size: clamp(32px, 4.4vw, 54px); line-height: 1.05; margin: 0 0 16px;
+  font-weight: 650; font-variation-settings: "opsz" 96, "wdth" 82; letter-spacing: -0.02em; max-width: 22ch;
+}
+html:lang(zh) h1 { letter-spacing: 0; line-height: 1.2; max-width: 14em; }
+.lede { color: var(--ink-2); max-width: 62ch; margin: 0 0 8px; font-size: 17px; }
+.radar-box { position: relative; }
+#radar { width: 100%; height: auto; display: block; overflow: visible; }
+#radar .graticule { fill: none; stroke: var(--grid-2); stroke-width: 1; }
+#radar .ring-edge { fill: none; stroke: var(--grid); stroke-width: 1.25; }
+#radar .spoke { stroke: var(--grid); stroke-width: 1.25; }
+#radar .ring-label { font-size: 21px; fill: var(--ink-2); font-variation-settings: "wdth" 85; paint-order: stroke; stroke: var(--paper); stroke-width: 5px; stroke-linejoin: round; }
+#radar .area-label { font-size: 26px; font-weight: 650; font-variation-settings: "wdth" 85; }
+#radar .blip { cursor: pointer; transition: opacity .2s; }
+#radar .blip path { stroke: var(--paper); stroke-width: 1.5; }
+#radar .blip:hover path, #radar .blip:focus path, #radar .blip.on path { stroke: var(--ink); stroke-width: 2.5; }
+#radar .blip.dim { opacity: .14; }
+#radar .blip:focus { outline: none; }
+@media (prefers-reduced-motion: no-preference) {
+  #radar .blip { animation: land .5s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * 12ms); }
+  @keyframes land { from { opacity: 0; transform: translate(var(--dx), var(--dy)); } }
+}
+
+/* 右侧说明面板 */
+.panel { display: grid; gap: 28px; padding-top: 24px; }
+.panel h2 { font-size: 15px; font-weight: 650; margin: 0 0 10px; color: var(--ink-2); }
+.rings { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.rings li { display: grid; grid-template-columns: 76px 1fr; gap: 12px; font-size: 15px; }
+.rings b { font-weight: 650; }
+.rings span { color: var(--ink-2); }
+.areas { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  font: inherit; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;
+  padding: 5px 12px; border-radius: 999px; border: 1px solid var(--grid); background: transparent; color: var(--ink); cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.swatch { width: 10px; height: 10px; border-radius: 50%; background: var(--c); flex: none; }
+.shapes { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--ink-2); }
+.shapes svg { vertical-align: -2px; margin-right: 6px; }
+.detail { border-left: 3px solid var(--c, var(--grid)); padding: 4px 0 4px 16px; min-height: 132px; }
+.detail .repo { font-weight: 650; font-size: 19px; text-decoration: none; word-break: break-word; }
+.detail .repo:hover { text-decoration: underline; }
+.detail p { margin: 6px 0; }
+.detail .meta { color: var(--ink-2); font-size: 14px; }
+.detail .hint { color: var(--ink-2); }
+
+/* 浏览区 */
+.browse { border-top: 1.5px solid var(--ink); padding: 28px 0 64px; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 28px; }
+.search { flex: 1 1 260px; max-width: 420px; }
+.search input {
+  width: 100%; font: inherit; font-size: 16px; padding: 9px 14px; border-radius: 8px;
+  border: 1px solid var(--grid); background: var(--paper-2); color: var(--ink);
+}
+.seg { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+.count { margin-left: auto; color: var(--ink-2); font-size: 14px; }
+.group { margin-bottom: 36px; }
+.group > h2 {
+  font-size: clamp(22px, 2.4vw, 28px); margin: 0 0 4px; font-weight: 650;
+  font-variation-settings: "opsz" 48, "wdth" 85; display: flex; align-items: center; gap: 12px;
+}
+.group > h2::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--c); }
+.group > p { margin: 0 0 12px; color: var(--ink-2); }
+.sub { font-size: 14px; color: var(--ink-2); margin: 18px 0 4px; font-weight: 500; }
+.rows { list-style: none; margin: 0; padding: 0; }
+.row {
+  display: grid; gap: 4px 16px; padding: 10px 12px; margin: 0 -12px; border-radius: 6px;
+  grid-template-columns: 1fr; border-top: 1px solid var(--grid-2);
+}
+@media (min-width: 820px) { .row { grid-template-columns: minmax(200px, 1.1fr) minmax(0, 2fr) 92px 70px 64px; align-items: baseline; } }
+.row:target, .row.on { background: var(--paper-2); box-shadow: inset 3px 0 0 var(--c); }
+.row a.name { font-weight: 600; text-decoration: none; word-break: break-word; }
+.row a.name:hover { text-decoration: underline; }
+.row .why { color: var(--ink); }
+.row .ring, .row .stars, .row .kind { font-size: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.flag { font-size: 13px; color: var(--a1); margin-left: 6px; font-weight: 500; }
+.empty { color: var(--ink-2); padding: 24px 0; }
+footer { color: var(--ink-2); font-size: 14px; padding: 24px 0 48px; border-top: 1px solid var(--grid); }
+footer a { color: var(--ink); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./">Awesome Origen <span data-t="brandSub"></span></a>
+    <nav>
+      <a id="recommend" href="https://github.com/origen-ae/awesome-origen/issues/new?template=add-project.yml" data-t="recommend"></a>
+      <a href="https://github.com/origen-ae/awesome-origen" data-t="source"></a>
+      <span class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button><button type="button" data-lang="zh">中文</button>
+      </span>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <h1 data-t="title"></h1>
+    <p class="lede" data-t="lede"></p>
+  </div>
+  <section class="hero">
+    <div>
+      <div class="radar-box">
+        <svg id="radar" viewBox="-120 -30 1040 860" role="img" aria-labelledby="radar-title">
+          <title id="radar-title" data-t="radarTitle"></title>
+        </svg>
+      </div>
+    </div>
+    <aside class="panel">
+      <div>
+        <h2 data-t="selected"></h2>
+        <div class="detail" id="detail" aria-live="polite"></div>
+      </div>
+      <div>
+        <h2 data-t="ringsTitle"></h2>
+        <ul class="rings" id="rings"></ul>
+      </div>
+      <div>
+        <h2 data-t="areasTitle"></h2>
+        <div class="areas" id="areas"></div>
+      </div>
+      <div>
+        <h2 data-t="kindsTitle"></h2>
+        <div class="shapes" id="shapes"></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="browse" aria-labelledby="browse-title">
+    <h2 id="browse-title" class="sr" data-t="browse"></h2>
+    <div class="filters">
+      <label class="search"><span class="sr" data-t="search"></span><input id="q" type="search" autocomplete="off"></label>
+      <div class="seg" id="kindFilter" role="group"></div>
+      <div class="seg" id="ringFilter" role="group"></div>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+    <div id="list"></div>
+  </section>
+
+  <footer>
+    <span data-t="footer"></span>
+  </footer>
+</div>
+
+<script>
+const T = {
+  en: {
+    brandSub: "tech radar", recommend: "Recommend a project", source: "GitHub",
+    title: "What Origen follows in open source, and how far we trust it",
+    lede: "A curated set of frontier research, engineering practices and tools across our five focus areas. Each dot is a project; the closer to the center, the more we rely on it.",
+    radarTitle: "Technology radar: projects by focus area and adoption ring",
+    selected: "Project", hint: "Hover or focus a dot on the radar to see why we follow it. Select it to jump to the full entry.",
+    ringsTitle: "Rings", areasTitle: "Focus areas", kindsTitle: "Kinds",
+    browse: "All projects", search: "Search projects", placeholder: "Search by name or reason",
+    all: "All", count: n => `${n} ${n === 1 ? "project" : "projects"}`,
+    empty: "No project matches these filters. Clear the search or pick another ring.",
+    stars: "stars", pushed: "last push", archived: "archived", missing: "no longer available", stale: "no push in a year",
+    footer: "Data lives in data/*.yaml in the awesome-origen repository and is refreshed weekly. Suggestions are welcome through the Recommend a project form.",
+  },
+  zh: {
+    brandSub: "技术雷达", recommend: "推荐项目", source: "GitHub",
+    title: "Origen 关注的开源项目，以及我们对它们的态度",
+    lede: "按五个方向整理的前沿研究、工程实践与工具。每个点是一个项目，越靠近中心，说明我们越依赖它。",
+    radarTitle: "技术雷达：按方向和采用程度分布的项目",
+    selected: "项目", hint: "把鼠标移到雷达上的点，或用键盘聚焦，可以看到我们关注它的原因；点击可以跳到列表中的完整条目。",
+    ringsTitle: "环", areasTitle: "方向", kindsTitle: "类型",
+    browse: "全部项目", search: "搜索项目", placeholder: "按名称或关注原因搜索",
+    all: "全部", count: n => `${n} 个项目`,
+    empty: "没有符合条件的项目。清空搜索词，或换一个环试试。",
+    stars: "stars", pushed: "最近推送", archived: "已归档", missing: "已失效", stale: "一年未更新",
+    footer: "数据保存在 awesome-origen 仓库的 data/*.yaml 中，每周刷新。欢迎通过「推荐项目」表单提交建议。",
+  },
+};
+const RINGS = ["adopt", "trial", "assess", "hold"];
+const RING_R = [0, 0.3, 0.52, 0.8, 1];        // 各环的内外半径（相对值）
+const AREA_COLORS = ["var(--a1)", "var(--a2)", "var(--a3)", "var(--a4)", "var(--a5)"];
+const R = 400, C = 400;
+const state = { lang: "en", areas: new Set(), kind: "", ring: "", q: "", pinned: null };
+let DATA;
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const L = o => o[state.lang] ?? o.en;
+const t = k => T[state.lang][k];
+const slug = repo => "p-" + repo.replace(/[^\w-]/g, "-");
+const fmtStars = n => n == null ? "–" : n >= 1000 ? (n / 1000).toFixed(1) + "k" : String(n);
+const areaIndex = id => DATA.areas.findIndex(a => a.id === id);
+const colorOf = p => AREA_COLORS[areaIndex(p.area) % AREA_COLORS.length];
+
+function pickLang() {
+  const q = new URLSearchParams(location.search).get("lang");
+  if (q === "zh" || q === "en") return q;
+  try { const s = localStorage.getItem("ao-lang"); if (s === "zh" || s === "en") return s; } catch (e) {}
+  return "en";
+}
+
+function shape(kind, x, y, r) {
+  if (kind === "frontier") return `M${x} ${y - r * 1.2}L${x + r * 1.1} ${y + r * .75}L${x - r * 1.1} ${y + r * .75}Z`;
+  if (kind === "practice") return `M${x} ${y - r * 1.15}L${x + r * 1.15} ${y}L${x} ${y + r * 1.15}L${x - r * 1.15} ${y}Z`;
+  return `M${x - r} ${y}a${r} ${r} 0 1 0 ${r * 2} 0a${r} ${r} 0 1 0 ${-r * 2} 0`;
+}
+
+function flags(p) {
+  const out = [];
+  if (p.archived) out.push(t("archived"));
+  if (p.missing) out.push(t("missing"));
+  else if (p.pushed_at && (Date.now() - Date.parse(p.pushed_at)) > 365 * 864e5) out.push(t("stale"));
+  return out;
+}
+
+function matches(p) {
+  if (state.areas.size && !state.areas.has(p.area)) return false;
+  if (state.kind && p.kind !== state.kind) return false;
+  if (state.ring && p.ring !== state.ring) return false;
+  if (state.q) {
+    const hay = [p.repo, p.why.en, p.why.zh, p.desc].join(" ").toLowerCase();
+    if (!hay.includes(state.q)) return false;
+  }
+  return true;
+}
+
+/* 雷达：扇区 = 方向，环 = 采用程度；点在各自的扇区环带内按弧长均匀排布 */
+function drawRadar() {
+  const svg = $("#radar");
+  const n = DATA.areas.length, span = 2 * Math.PI / n, start = -Math.PI / 2;
+  const pol = (r, a) => [C + r * Math.cos(a), C + r * Math.sin(a)];
+  let g = `<title id="radar-title">${esc(t("radarTitle"))}</title>`;
+  for (let i = 1; i < 10; i++) g += `<circle class="graticule" cx="${C}" cy="${C}" r="${R * i / 10}"/>`;
+  RING_R.slice(1).forEach(f => g += `<circle class="ring-edge" cx="${C}" cy="${C}" r="${R * f}"/>`);
+  DATA.areas.forEach((a, i) => {
+    const [x, y] = pol(R, start + i * span);
+    g += `<line class="spoke" x1="${C}" y1="${C}" x2="${x}" y2="${y}"/>`;
+  });
+  RINGS.forEach((ring, i) => {
+    const r = R * (RING_R[i] + RING_R[i + 1]) / 2;
+    g += `<text class="ring-label" x="${C}" y="${C - r + 5}" text-anchor="middle">${esc(L(DATA.rings[ring].name))}</text>`;
+  });
+  DATA.areas.forEach((a, i) => {
+    const mid = start + (i + .5) * span;
+    const [x, y] = pol(R + 34, mid);
+    const anchor = Math.abs(Math.cos(mid)) < .2 ? "middle" : Math.cos(mid) > 0 ? "start" : "end";
+    g += `<text class="area-label" x="${x}" y="${y + 6}" text-anchor="${anchor}" fill="${AREA_COLORS[i]}">${esc(L(a.short))}</text>`;
+  });
+
+  let idx = 0;
+  DATA.areas.forEach((a, ai) => {
+    const a0 = start + ai * span + .09, a1 = start + (ai + 1) * span - .09;
+    RINGS.forEach((ring, ri) => {
+      const items = DATA.projects.filter(p => p.area === a.id && p.ring === ring)
+        .sort((x, y) => (x.category > y.category) - (x.category < y.category) || (y.stars || 0) - (x.stars || 0));
+      if (!items.length) return;
+      const r0 = R * RING_R[ri] + 18, r1 = R * RING_R[ri + 1] - 14, gap = 25;
+      let rows = Math.max(1, Math.floor((r1 - r0) / gap));
+      const cap = k => Math.max(1, Math.floor((a1 - a0) * (r0 + (k + .5) * (r1 - r0) / rows) / gap));
+      let placed = 0; const slots = [];
+      for (let k = 0; k < rows && placed < items.length; k++) {
+        const m = Math.min(cap(k), items.length - placed);
+        const r = r0 + (k + .5) * (r1 - r0) / rows;
+        for (let j = 0; j < m; j++) slots.push([r, a0 + (a1 - a0) * (j + .5) / m + (k % 2 ? .012 : 0)]);
+        placed += m;
+      }
+      items.forEach((p, j) => {
+        const [r, ang] = slots[j] || slots[slots.length - 1];
+        const [x, y] = pol(r, ang);
+        const label = `${p.repo} — ${L(p.why)}`;
+        g += `<a class="blip" href="#${slug(p.repo)}" data-repo="${esc(p.repo)}" aria-label="${esc(label)}"
+                style="--i:${idx++};--dx:${(C - x) * .15}px;--dy:${(C - y) * .15}px">
+                <path d="${shape(p.kind, x, y, 7.5)}" fill="${AREA_COLORS[ai]}"/></a>`;
+      });
+    });
+  });
+  svg.innerHTML = g;
+  svg.querySelectorAll(".blip").forEach(el => {
+    const p = DATA.projects.find(x => x.repo === el.dataset.repo);
+    el.addEventListener("mouseenter", () => showDetail(p));
+    el.addEventListener("focus", () => showDetail(p));
+    el.addEventListener("click", () => { state.pinned = p.repo; showDetail(p); });
+  });
+}
+
+function showDetail(p) {
+  const d = $("#detail");
+  if (!p) { d.style.removeProperty("--c"); d.innerHTML = `<p class="hint">${esc(t("hint"))}</p>`; return; }
+  const cat = DATA.areas.flatMap(a => a.children).find(c => c.id === p.category);
+  const f = flags(p);
+  d.style.setProperty("--c", colorOf(p));
+  d.innerHTML = `
+    <a class="repo" href="https://github.com/${esc(p.repo)}">${esc(p.repo)}</a>
+    <p>${esc(L(p.why))}</p>
+    <p class="meta">${esc(L(cat.name))}, ${esc(L(DATA.kinds[p.kind].name))}, ${esc(L(DATA.rings[p.ring].name))}</p>
+    <p class="meta">${fmtStars(p.stars)} ${esc(t("stars"))}${p.pushed_at ? `, ${esc(t("pushed"))} ${esc(p.pushed_at)}` : ""}${p.language ? `, ${esc(p.language)}` : ""}${f.length ? `<span class="flag">${esc(f.join(", "))}</span>` : ""}</p>`;
+  document.querySelectorAll(".blip.on, .row.on").forEach(e => e.classList.remove("on"));
+  document.querySelector(`.blip[data-repo="${CSS.escape(p.repo)}"]`)?.classList.add("on");
+}
+
+function drawLegend() {
+  $("#rings").innerHTML = RINGS.map(r => `<li><b>${esc(L(DATA.rings[r].name))}</b><span>${esc(L(DATA.rings[r].desc))}</span></li>`).join("");
+  $("#areas").innerHTML = DATA.areas.map((a, i) => {
+    const n = DATA.projects.filter(p => p.area === a.id).length;
+    return `<button type="button" class="chip" data-area="${a.id}" aria-pressed="${state.areas.has(a.id)}" style="--c:${AREA_COLORS[i]}">
+      <span class="swatch"></span>${esc(L(a.name))} ${n}</button>`;
+  }).join("");
+  $("#areas").querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    const id = b.dataset.area;
+    state.areas.has(id) ? state.areas.delete(id) : state.areas.add(id);
+    b.setAttribute("aria-pressed", state.areas.has(id));
+    applyFilters();
+  }));
+  $("#shapes").innerHTML = Object.entries(DATA.kinds).map(([k, v]) =>
+    `<span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="${shape(k, 8, 8.5, 5.5)}" fill="currentColor"/></svg>${esc(L(v.name))}: ${esc(L(v.desc))}</span>`).join("");
+
+  const seg = (el, items, key) => {
+    el.innerHTML = [["", t("all")], ...items].map(([v, label]) =>
+      `<button type="button" class="chip" data-v="${v}" aria-pressed="${state[key] === v}">${esc(label)}</button>`).join("");
+    el.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+      state[key] = b.dataset.v;
+      el.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+      applyFilters();
+    }));
+  };
+  seg($("#kindFilter"), Object.entries(DATA.kinds).map(([k, v]) => [k, L(v.name)]), "kind");
+  seg($("#ringFilter"), RINGS.map(r => [r, L(DATA.rings[r].name)]), "ring");
+}
+
+function drawList() {
+  const ringOrder = p => RINGS.indexOf(p.ring);
+  let html = "", shown = 0;
+  DATA.areas.forEach((a, i) => {
+    const inArea = DATA.projects.filter(p => p.area === a.id && matches(p));
+    if (!inArea.length) return;
+    shown += inArea.length;
+    html += `<section class="group" style="--c:${AREA_COLORS[i]}"><h2>${esc(L(a.name))}</h2><p>${esc(L(a.desc))}</p>`;
+    a.children.forEach(c => {
+      const items = inArea.filter(p => p.category === c.id).sort((x, y) => ringOrder(x) - ringOrder(y) || (y.stars || 0) - (x.stars || 0));
+      if (!items.length) return;
+      html += `<h3 class="sub">${esc(L(c.name))}</h3><ul class="rows">` + items.map(p => {
+        const f = flags(p);
+        return `<li class="row" id="${slug(p.repo)}" style="--c:${AREA_COLORS[i]}">
+          <span><a class="name" href="https://github.com/${esc(p.repo)}">${esc(p.repo)}</a>${f.length ? `<span class="flag">${esc(f.join(", "))}</span>` : ""}</span>
+          <span class="why">${esc(L(p.why))}</span>
+          <span class="kind">${esc(L(DATA.kinds[p.kind].name))}</span>
+          <span class="ring">${esc(L(DATA.rings[p.ring].name))}</span>
+          <span class="stars" title="${esc(t("stars"))}">★ ${fmtStars(p.stars)}</span>
+        </li>`;
+      }).join("") + `</ul>`;
+    });
+    html += `</section>`;
+  });
+  $("#list").innerHTML = html || `<p class="empty">${esc(t("empty"))}</p>`;
+  $("#count").textContent = t("count")(shown);
+}
+
+function applyFilters() {
+  document.querySelectorAll("#radar .blip").forEach(el => {
+    const p = DATA.projects.find(x => x.repo === el.dataset.repo);
+    el.classList.toggle("dim", !matches(p));
+  });
+  drawList();
+}
+
+function setLang(lang) {
+  state.lang = lang;
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  try { localStorage.setItem("ao-lang", lang); } catch (e) {}
+  document.querySelectorAll("[data-t]").forEach(el => el.textContent = t(el.dataset.t));
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  $("#q").placeholder = t("placeholder");
+  document.title = lang === "zh" ? "Awesome Origen 技术雷达" : "Awesome Origen";
+  drawRadar(); drawLegend(); applyFilters();
+  showDetail(state.pinned ? DATA.projects.find(p => p.repo === state.pinned) : null);
+}
+
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+$("#q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); applyFilters(); });
+
+fetch("data.json").then(r => r.json()).then(d => {
+  DATA = d;
+  setLang(pickLang());
+  if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+}).catch(() => {
+  $("#list").innerHTML = `<p class="empty">data.json could not be loaded. Run <code>python scripts/build_site.py</code> and serve the site/ folder.</p>`;
+});
+</script>
+</body>
+</html>

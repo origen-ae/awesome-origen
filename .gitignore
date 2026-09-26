@@ -4,3 +4,5 @@ verdicts.json
 issue-*.md
 *-summary.md
 summary.md
+site/data.json
+.playwright-mcp/

@@ -5,6 +5,8 @@
 
 Curated frontier technologies, engineering practices and tools that Origen follows. Each entry says **why we care about it**, and a technology radar ring marks our stance.
 
+🌐 Interactive radar with search and filters: **https://origen-ae.github.io/awesome-origen/**
+
 **67** projects: [🔭 Frontier 14](docs/frontier.md) · [📐 Practice 6](docs/practice.md) · [🛠 Tool 47](docs/tool.md) · [🎯 By radar](docs/radar.md)
 
 - Kind: 🔭 **Frontier**: Frontier models, research code, paper collections · 📐 **Practice**: Engineering practices, cookbooks, reference implementations, tutorials · 🛠 **Tool**: Ready-to-use frameworks, platforms and libraries

@@ -5,6 +5,8 @@
 
 Origen 关注的前沿技术、工程实践与工具精选。每一项都写明了**我们为什么关注它**，并用技术雷达标注团队态度。
 
+🌐 可搜索、可筛选的交互式雷达：**https://origen-ae.github.io/awesome-origen/?lang=zh**
+
 共 **67** 个项目： [🔭 前沿 14](docs/frontier.zh-CN.md) · [📐 实践 6](docs/practice.zh-CN.md) · [🛠 工具 47](docs/tool.zh-CN.md) · [🎯 按雷达查看](docs/radar.zh-CN.md)
 
 - 类型: 🔭 **前沿**: 前沿模型、研究代码、论文合集 · 📐 **实践**: 工程实践、Cookbook、参考实现、教程 · 🛠 **工具**: 可直接使用的框架、平台、库
