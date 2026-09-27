@@ -39,7 +39,7 @@
 
 | 任务 | 时间 | 作用 |
 |---|---|---|
-| Claude Code 定时任务（`/curate routine`） | 每天 | 处理推荐 issue；周一额外按 `data/sources.yaml` 发现新项目；有变化时开 PR |
+| 每日任务（`scripts/daily.py`，由计划任务调用） | 每天 09:00（北京时间） | 处理推荐 issue；周一额外按 `data/sources.yaml` 发现新项目；有变化时开 PR |
 | `refresh` workflow | 每周一 | 刷新 stars、活跃度、归档状态 |
 | `validate` workflow | PR / push | 校验数据，并检查 README 是否已重新生成 |
 

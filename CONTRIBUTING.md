@@ -39,7 +39,7 @@ Edit `data/categories.yaml`. Every category needs English (`name` / `desc`) and 
 
 | Job | When | What it does |
 |---|---|---|
-| Claude Code routine (`/curate routine`) | Daily | Processes recommendation issues; on Mondays also discovers new projects via `data/sources.yaml`; opens a PR when something changed |
+| Daily job (`scripts/daily.py`, run by a scheduled task) | Daily 09:00 (Asia/Shanghai) | Processes recommendation issues; on Mondays also discovers new projects via `data/sources.yaml`; opens a PR when something changed |
 | `refresh` workflow | Mondays | Refreshes stars, activity and archived status |
 | `validate` workflow | PR / push | Validates data and checks the README is regenerated |
 
