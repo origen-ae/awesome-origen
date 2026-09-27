@@ -7,14 +7,14 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 🌐 可搜索、可筛选的交互式雷达：**https://origen-ae.github.io/awesome-origen/?lang=zh**
 
-共 **67** 个项目： [🔭 前沿 14](docs/frontier.zh-CN.md) · [📐 实践 6](docs/practice.zh-CN.md) · [🛠 工具 47](docs/tool.zh-CN.md) · [🎯 按雷达查看](docs/radar.zh-CN.md)
+共 **68** 个项目： [🔭 前沿 14](docs/frontier.zh-CN.md) · [📐 实践 6](docs/practice.zh-CN.md) · [🛠 工具 48](docs/tool.zh-CN.md) · [🎯 按雷达查看](docs/radar.zh-CN.md)
 
 - 类型: 🔭 **前沿**: 前沿模型、研究代码、论文合集 · 📐 **实践**: 工程实践、Cookbook、参考实现、教程 · 🛠 **工具**: 可直接使用的框架、平台、库
 - 雷达: **采用** (adopt): 已在项目中使用，推荐默认选型 · **试用** (trial): 值得在真实项目中小范围试用 · **评估** (assess): 值得关注和调研，尚未实践 · **暂缓** (hold): 不再推荐（停更、被替代或不适配）
 
 ## 目录
 
-- [AI Native](#ai-native) (19) — Agent、LLM 应用工程与 AI 基础设施
+- [AI Native](#ai-native) (20) — Agent、LLM 应用工程与 AI 基础设施
 - [Ontology 与知识图谱](#ontology) (11) — 本体建模、语义网、图数据库、GraphRAG
 - [VLM 视觉语言模型](#vlm) (11) — 多模态大模型、视觉基础模型、训练与评测
 - [遥感与地理空间](#remote-sensing) (13) — 遥感基础模型、遥感智能解译、地理空间数据基础设施
@@ -34,6 +34,7 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 🛠 工具 | 评估 | 基于角色的多 Agent 协作 | 59.0k | 2026-09-26 |
 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 🛠 工具 | 评估 | 有状态、可持久化的 Agent 图编排 | 42.3k | 2026-09-26 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 🛠 工具 | 评估 | 轻量多 Agent 框架，handoff / guardrail 设计值得参考 | 29.7k | 2026-09-25 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | 🛠 工具 | 评估 | 代码即动作的极简 Agent 框架 | 29.5k | 2026-09-23 |
 
 ### AI 编程与自主 Agent
 
