@@ -7,14 +7,14 @@ Curated frontier technologies, engineering practices and tools that Origen follo
 
 🌐 Interactive radar with search and filters: **https://origen-ae.github.io/awesome-origen/**
 
-**67** projects: [🔭 Frontier 14](docs/frontier.md) · [📐 Practice 6](docs/practice.md) · [🛠 Tool 47](docs/tool.md) · [🎯 By radar](docs/radar.md)
+**68** projects: [🔭 Frontier 14](docs/frontier.md) · [📐 Practice 6](docs/practice.md) · [🛠 Tool 48](docs/tool.md) · [🎯 By radar](docs/radar.md)
 
 - Kind: 🔭 **Frontier**: Frontier models, research code, paper collections · 📐 **Practice**: Engineering practices, cookbooks, reference implementations, tutorials · 🛠 **Tool**: Ready-to-use frameworks, platforms and libraries
 - Radar: **Adopt** (adopt): Used in our projects; recommended default choice · **Trial** (trial): Worth trying in a real project at small scale · **Assess** (assess): Worth watching and researching; not yet used · **Hold** (hold): No longer recommended (unmaintained, superseded or unsuitable)
 
 ## Contents
 
-- [AI Native](#ai-native) (19) — Agents, LLM application engineering and AI infrastructure
+- [AI Native](#ai-native) (20) — Agents, LLM application engineering and AI infrastructure
 - [Ontology & Knowledge Graphs](#ontology) (11) — Ontology modeling, semantic web, graph databases, GraphRAG
 - [Vision-Language Models](#vlm) (11) — Multimodal LLMs, vision foundation models, training and evaluation
 - [Remote Sensing & Geospatial](#remote-sensing) (13) — Remote sensing foundation models, intelligent interpretation, geospatial data infrastructure
@@ -34,6 +34,7 @@ Curated frontier technologies, engineering practices and tools that Origen follo
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 🛠 Tool | Assess | Role-based multi-agent collaboration | 59.0k | 2026-09-26 |
 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 🛠 Tool | Assess | Stateful, durable graph orchestration for agents | 42.3k | 2026-09-26 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 🛠 Tool | Assess | Lightweight multi-agent framework; handoff / guardrail design worth studying | 29.7k | 2026-09-25 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | 🛠 Tool | Assess | Minimalist agent framework using code as actions | 29.5k | 2026-09-23 |
 
 ### AI Coding & Autonomous Agents
 

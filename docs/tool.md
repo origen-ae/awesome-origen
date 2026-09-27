@@ -3,7 +3,7 @@
 
 [← Back to overview](../README.md) · [简体中文](tool.zh-CN.md)
 
-## Assess (47)
+## Assess (48)
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
@@ -36,6 +36,7 @@
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Knowledge-graph memory layer for agents | 31.0k | 2026-09-26 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | Knowledge Bases & RAG / Knowledge Base Apps | 🛠 Tool | Assess | Knowledge base QA + workflow orchestration | 29.7k | 2026-09-25 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | Lightweight multi-agent framework; handoff / guardrail design worth studying | 29.7k | 2026-09-25 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | Minimalist agent framework using code as actions | 29.5k | 2026-09-23 |
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | Knowledge Bases & RAG / RAG Engines & Frameworks | 🛠 Tool | Assess | Production-grade RAG / search pipelines | 26.6k | 2026-09-25 |
 | [neo4j/neo4j](https://github.com/neo4j/neo4j) | Ontology & Knowledge Graphs / Graph Databases & Triple Stores | 🛠 Tool | Assess | Mainstream property graph database | 17.3k | 2026-09-22 |
 | [modelscope/ms-swift](https://github.com/modelscope/ms-swift) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | ModelScope LLM / multimodal training framework | 15.7k | 2026-09-26 |

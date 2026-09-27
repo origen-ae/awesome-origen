@@ -3,7 +3,7 @@
 
 [← 返回总览](../README.zh-CN.md) · [English](radar.md)
 
-## 评估 (assess) — 值得关注和调研，尚未实践 (67)
+## 评估 (assess) — 值得关注和调研，尚未实践 (68)
 
 | 项目 | 分类 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|---|
@@ -43,6 +43,7 @@
 | [labring/FastGPT](https://github.com/labring/FastGPT) | 知识库与 RAG / 知识库应用 | 🛠 工具 | 评估 | 知识库问答 + 工作流编排 | 29.7k | 2026-09-25 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | AI Native / Agent 框架与编排 | 🛠 工具 | 评估 | 轻量多 Agent 框架，handoff / guardrail 设计值得参考 | 29.7k | 2026-09-25 |
 | [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | 知识库与 RAG / RAG 工程实践 | 📐 实践 | 评估 | RAG 进阶技巧 Notebook 合集 | 29.6k | 2026-09-21 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | AI Native / Agent 框架与编排 | 🛠 工具 | 评估 | 代码即动作的极简 Agent 框架 | 29.5k | 2026-09-23 |
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | 知识库与 RAG / RAG 引擎与框架 | 🛠 工具 | 评估 | 生产级 RAG / 搜索管线 | 26.6k | 2026-09-25 |
 | [OpenBMB/MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V) | VLM 视觉语言模型 / 开源 VLM 模型 | 🔭 前沿 | 评估 | 端侧可部署的 VLM | 26.5k | 2026-09-08 |
 | [haotian-liu/LLaVA](https://github.com/haotian-liu/LLaVA) 💤一年未更新 | VLM 视觉语言模型 / 开源 VLM 模型 | 🔭 前沿 | 评估 | 视觉指令微调的奠基工作 | 25.0k | 2024-08-12 |

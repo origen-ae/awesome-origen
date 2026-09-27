@@ -3,7 +3,7 @@
 
 [← Back to overview](../README.md) · [简体中文](radar.zh-CN.md)
 
-## Assess (assess) — Worth watching and researching; not yet used (67)
+## Assess (assess) — Worth watching and researching; not yet used (68)
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
@@ -43,6 +43,7 @@
 | [labring/FastGPT](https://github.com/labring/FastGPT) | Knowledge Bases & RAG / Knowledge Base Apps | 🛠 Tool | Assess | Knowledge base QA + workflow orchestration | 29.7k | 2026-09-25 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | Lightweight multi-agent framework; handoff / guardrail design worth studying | 29.7k | 2026-09-25 |
 | [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Knowledge Bases & RAG / RAG Engineering Practices | 📐 Practice | Assess | Notebook collection of advanced RAG techniques | 29.6k | 2026-09-21 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | Minimalist agent framework using code as actions | 29.5k | 2026-09-23 |
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | Knowledge Bases & RAG / RAG Engines & Frameworks | 🛠 Tool | Assess | Production-grade RAG / search pipelines | 26.6k | 2026-09-25 |
 | [OpenBMB/MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V) | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | VLM deployable on edge devices | 26.5k | 2026-09-08 |
 | [haotian-liu/LLaVA](https://github.com/haotian-liu/LLaVA) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | Foundational work on visual instruction tuning | 25.0k | 2024-08-12 |

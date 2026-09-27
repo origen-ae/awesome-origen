@@ -3,7 +3,7 @@
 
 [← 返回总览](../README.zh-CN.md) · [English](tool.md)
 
-## 评估 (47)
+## 评估 (48)
 
 | 项目 | 分类 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|---|
@@ -36,6 +36,7 @@
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | Ontology 与知识图谱 / GraphRAG 与 Agent 记忆 | 🛠 工具 | 评估 | 知识图谱式 Agent 记忆层 | 31.0k | 2026-09-26 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | 知识库与 RAG / 知识库应用 | 🛠 工具 | 评估 | 知识库问答 + 工作流编排 | 29.7k | 2026-09-25 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | AI Native / Agent 框架与编排 | 🛠 工具 | 评估 | 轻量多 Agent 框架，handoff / guardrail 设计值得参考 | 29.7k | 2026-09-25 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | AI Native / Agent 框架与编排 | 🛠 工具 | 评估 | 代码即动作的极简 Agent 框架 | 29.5k | 2026-09-23 |
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | 知识库与 RAG / RAG 引擎与框架 | 🛠 工具 | 评估 | 生产级 RAG / 搜索管线 | 26.6k | 2026-09-25 |
 | [neo4j/neo4j](https://github.com/neo4j/neo4j) | Ontology 与知识图谱 / 图数据库与三元组存储 | 🛠 工具 | 评估 | 主流属性图数据库 | 17.3k | 2026-09-22 |
 | [modelscope/ms-swift](https://github.com/modelscope/ms-swift) | VLM 视觉语言模型 / 训练、微调与评测 | 🛠 工具 | 评估 | 魔搭大模型 / 多模态训练框架 | 15.7k | 2026-09-26 |
