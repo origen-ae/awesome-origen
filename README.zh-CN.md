@@ -7,18 +7,18 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 🌐 可搜索、可筛选的交互式雷达：**https://origen-ae.github.io/awesome-origen/?lang=zh**
 
-共 **67** 个项目： [🔭 前沿 14](docs/frontier.zh-CN.md) · [📐 实践 6](docs/practice.zh-CN.md) · [🛠 工具 47](docs/tool.zh-CN.md) · [🎯 按雷达查看](docs/radar.zh-CN.md)
+共 **101** 个项目： [🔭 前沿 19](docs/frontier.zh-CN.md) · [📐 实践 11](docs/practice.zh-CN.md) · [🛠 工具 71](docs/tool.zh-CN.md) · [🎯 按雷达查看](docs/radar.zh-CN.md)
 
 - 类型: 🔭 **前沿**: 前沿模型、研究代码、论文合集 · 📐 **实践**: 工程实践、Cookbook、参考实现、教程 · 🛠 **工具**: 可直接使用的框架、平台、库
 - 雷达: **采用** (adopt): 已在项目中使用，推荐默认选型 · **试用** (trial): 值得在真实项目中小范围试用 · **评估** (assess): 值得关注和调研，尚未实践 · **暂缓** (hold): 不再推荐（停更、被替代或不适配）
 
 ## 目录
 
-- [AI Native](#ai-native) (19) — Agent、LLM 应用工程与 AI 基础设施
-- [Ontology 与知识图谱](#ontology) (11) — 本体建模、语义网、图数据库、GraphRAG
-- [VLM 视觉语言模型](#vlm) (11) — 多模态大模型、视觉基础模型、训练与评测
-- [遥感与地理空间](#remote-sensing) (13) — 遥感基础模型、遥感智能解译、地理空间数据基础设施
-- [知识库与 RAG](#knowledge-base) (13) — RAG 引擎、文档解析、向量数据库、知识库应用
+- [AI Native](#ai-native) (28) — Agent、LLM 应用工程与 AI 基础设施
+- [Ontology 与知识图谱](#ontology) (15) — 本体建模、语义网、图数据库、GraphRAG
+- [VLM 视觉语言模型](#vlm) (17) — 多模态大模型、视觉基础模型、训练与评测
+- [遥感与地理空间](#remote-sensing) (21) — 遥感基础模型、遥感智能解译、地理空间数据基础设施
+- [知识库与 RAG](#knowledge-base) (20) — RAG 引擎、文档解析、向量数据库、知识库应用
 
 <a id="ai-native"></a>
 
@@ -30,6 +30,7 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 🛠 工具 | 评估 | 最主流的 LLM 应用与 Agent 开发框架 | 147.2k | 2026-09-27 |
 | [microsoft/autogen](https://github.com/microsoft/autogen) | 🛠 工具 | 评估 | 多 Agent 对话式协作框架 | 61.2k | 2026-04-15 |
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 🛠 工具 | 评估 | 基于角色的多 Agent 协作 | 59.0k | 2026-09-26 |
 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 🛠 工具 | 评估 | 有状态、可持久化的 Agent 图编排 | 42.3k | 2026-09-26 |
@@ -39,8 +40,13 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | 🛠 工具 | 评估 | 编程 Agent 的技能、记忆与安全增强套件 | 268.4k | 2026-09-28 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 🛠 工具 | 评估 | 具备自学习闭环与长期记忆的自主 Agent | 249.5k | 2026-09-28 |
+| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 🛠 工具 | 评估 | DeepSeek 官方出品的插件化 Agent 运行框架 | 237.7k | 2026-09-27 |
 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | 🛠 工具 | 评估 | 终端 AI 编程 Agent，skill / hook / MCP 扩展体系 | 148.2k | 2026-09-26 |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 🛠 工具 | 评估 | 约束 AI 编程过度设计，减少冗余代码 | 146.9k | 2026-09-14 |
 | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 🛠 工具 | 评估 | 让 Agent 操作浏览器 | 116.4k | 2026-09-26 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 🛠 工具 | 评估 | 谷歌开源的终端编程 Agent，支持 MCP 扩展 | 107.2k | 2026-09-28 |
 | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 🛠 工具 | 评估 | 开源自主软件工程 Agent | 89.2k | 2026-09-26 |
 
 ### MCP 与工具生态
@@ -68,6 +74,7 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
+| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | 🛠 工具 | 评估 | 本地压缩 Agent 上下文，大幅节省 token | 74.0k | 2026-09-27 |
 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | 🛠 工具 | 评估 | 统一多模型调用的网关 | 59.6k | 2026-09-26 |
 | [langfuse/langfuse](https://github.com/langfuse/langfuse) | 🛠 工具 | 评估 | LLM 调用链观测、评测与 Prompt 管理 | 35.1k | 2026-09-26 |
 
@@ -75,7 +82,9 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 📐 实践 | 评估 | 大量可运行的 Agent 与 RAG 应用参考实现 | 140.0k | 2026-09-26 |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | 📐 实践 | 评估 | LLM 系统学习路线 | 83.1k | 2026-02-05 |
+| [datawhalechina/hello-agents](https://github.com/datawhalechina/hello-agents) | 📐 实践 | 评估 | 系统化的中文智能体从零构建教程 | 81.0k | 2026-09-26 |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | 📐 实践 | 评估 | Prompt / Context 工程指南 | 78.6k | 2026-03-11 |
 | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | 📐 实践 | 评估 | OpenAI 官方工程实践示例 | 76.2k | 2026-09-26 |
 | [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | 📐 实践 | 评估 | Claude 官方工程实践示例 | 53.0k | 2026-09-24 |
@@ -92,6 +101,7 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 |---|---|---|---|---|---|
 | [RDFLib/rdflib](https://github.com/RDFLib/rdflib) | 🛠 工具 | 评估 | Python RDF / SPARQL 基础库 | 2.5k | 2026-09-23 |
 | [protegeproject/protege](https://github.com/protegeproject/protege) | 🛠 工具 | 评估 | 经典 OWL 本体编辑器 | 1.5k | 2026-09-25 |
+| [protegeproject/webprotege](https://github.com/protegeproject/webprotege) | 🛠 工具 | 评估 | 斯坦福出品的 Web 协作式 OWL 本体编辑器 | 796 | 2026-07-28 |
 | [linkml/linkml](https://github.com/linkml/linkml) | 🛠 工具 | 评估 | 用 YAML 定义数据模型 / 本体，可生成多种 schema | 632 | 2026-09-25 |
 
 ### 图数据库与三元组存储
@@ -106,11 +116,14 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 🛠 工具 | 评估 | 把代码库转为知识图谱，给编程 Agent 做上下文 | 121.9k | 2026-09-27 |
 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | 🔭 前沿 | 评估 | 轻量 GraphRAG，支持增量更新 | 39.9k | 2026-09-26 |
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | 🔭 前沿 | 评估 | 基于知识图谱的 RAG | 36.1k | 2026-09-24 |
 | [getzep/graphiti](https://github.com/getzep/graphiti) | 🛠 工具 | 评估 | 时序知识图谱，适合做 Agent 记忆 | 31.2k | 2026-09-26 |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | 🛠 工具 | 评估 | 知识图谱式 Agent 记忆层 | 31.0k | 2026-09-26 |
+| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | 🛠 工具 | 评估 | 带溯源的上下文图谱底座，支撑可追溯 AI | 13.5k | 2026-09-27 |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | 🔭 前沿 | 评估 | 知识增强生成，逻辑推理问答 | 9.1k | 2026-01-28 |
+| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | 🛠 工具 | 评估 | 本体驱动的 GraphRAG，为 Agent 提供可溯源知识 | 2.8k | 2026-09-26 |
 
 <a id="vlm"></a>
 
@@ -141,13 +154,19 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 |---|---|---|---|---|---|
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 🛠 工具 | 评估 | 一站式 LLM / VLM 微调 | 75.0k | 2026-09-14 |
 | [modelscope/ms-swift](https://github.com/modelscope/ms-swift) | 🛠 工具 | 评估 | 魔搭大模型 / 多模态训练框架 | 15.7k | 2026-09-26 |
+| [CVHub520/X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) | 🛠 工具 | 评估 | AI 辅助多模态标注，高效构建视觉训练数据 | 10.6k | 2026-09-19 |
+| [jingyaogong/minimind-v](https://github.com/jingyaogong/minimind-v) | 📐 实践 | 评估 | 从零训练超小 VLM 的极简教程 | 8.7k | 2026-09-22 |
+| [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | 🛠 工具 | 评估 | 在 Apple Silicon 上本地推理和微调 VLM | 5.5k | 2026-09-27 |
+| [EvolvingLMMs-Lab/lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) | 🛠 工具 | 评估 | 多模态模型统一评测基准，结果可复现 | 4.4k | 2026-09-24 |
 | [open-compass/VLMEvalKit](https://github.com/open-compass/VLMEvalKit) | 🛠 工具 | 评估 | VLM 评测工具集 | 4.4k | 2026-09-24 |
+| [2U1/Qwen-VL-Series-Finetune](https://github.com/2U1/Qwen-VL-Series-Finetune) | 📐 实践 | 评估 | Qwen-VL 系列 SFT/DPO/GRPO 微调实用方案 | 2.0k | 2026-09-09 |
 
 ### 论文与资料合集
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
 | [BradyFU/Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) | 🔭 前沿 | 评估 | 多模态大模型论文追踪 | 18.0k | 2026-09-18 |
+| [jingyi0000/VLM_survey](https://github.com/jingyi0000/VLM_survey) | 🔭 前沿 | 评估 | TPAMI 综述配套，系统梳理视觉任务 VLM | 3.1k | 2026-09-16 |
 
 <a id="remote-sensing"></a>
 
@@ -167,8 +186,10 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
+| [obss/sahi](https://github.com/obss/sahi) | 🛠 工具 | 评估 | 切片推理，解决大幅遥感影像小目标检测 | 5.5k | 2026-09-26 |
 | [torchgeo/torchgeo](https://github.com/torchgeo/torchgeo) | 🛠 工具 | 评估 | PyTorch 地理空间数据集 / 采样器 / 模型 | 4.2k | 2026-09-25 |
 | [opengeos/segment-geospatial](https://github.com/opengeos/segment-geospatial) | 🛠 工具 | 评估 | SAM 用于遥感影像分割 | 4.1k | 2026-09-21 |
+| [opengeos/geoai](https://github.com/opengeos/geoai) | 🛠 工具 | 评估 | 遥感影像深度学习全流程，从取数到推理 | 3.4k | 2026-09-25 |
 | [open-mmlab/mmrotate](https://github.com/open-mmlab/mmrotate) 💤一年未更新 | 🛠 工具 | 评估 | 旋转目标检测（遥感常用） | 2.2k | 2024-09-28 |
 
 ### 地理空间数据基础设施
@@ -176,8 +197,10 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
 | [OSGeo/gdal](https://github.com/OSGeo/gdal) | 🛠 工具 | 评估 | 栅格 / 矢量数据处理基石 | 6.1k | 2026-09-22 |
+| [gee-community/geemap](https://github.com/gee-community/geemap) | 🛠 工具 | 评估 | Earth Engine 的 Python 交互式分析利器 | 4.0k | 2026-09-24 |
 | [opengeos/leafmap](https://github.com/opengeos/leafmap) | 🛠 工具 | 评估 | Notebook 里的交互式地图分析 | 3.8k | 2026-09-21 |
 | [rasterio/rasterio](https://github.com/rasterio/rasterio) | 🛠 工具 | 评估 | Pythonic 栅格数据读写 | 2.6k | 2026-09-26 |
+| [samapriya/awesome-gee-community-datasets](https://github.com/samapriya/awesome-gee-community-datasets) | 🛠 工具 | 评估 | 社区版 GEE 数据目录，补齐官方缺少的数据集 | 1.2k | 2026-09-27 |
 | [developmentseed/titiler](https://github.com/developmentseed/titiler) | 🛠 工具 | 评估 | 动态瓦片服务（COG / STAC） | 1.2k | 2026-09-23 |
 | [stac-utils/pystac](https://github.com/stac-utils/pystac) | 🛠 工具 | 评估 | STAC 时空资产目录标准 | 464 | 2026-09-21 |
 
@@ -186,7 +209,11 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
 | [satellite-image-deep-learning/techniques](https://github.com/satellite-image-deep-learning/techniques) | 📐 实践 | 评估 | 卫星影像深度学习技术汇总 | 10.3k | 2026-09-19 |
+| [sacridini/Awesome-Geospatial](https://github.com/sacridini/Awesome-Geospatial) | 🔭 前沿 | 评估 | 地理空间工具与资源的全景索引 | 5.3k | 2026-09-23 |
+| [wenhwu/awesome-remote-sensing-change-detection](https://github.com/wenhwu/awesome-remote-sensing-change-detection) | 🔭 前沿 | 评估 | 遥感变化检测数据集与方法索引，持续更新 | 2.3k | 2026-09-09 |
 | [Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models) | 🔭 前沿 | 评估 | 遥感基础模型论文合集 | 1.9k | 2026-05-07 |
+| [opengeos/Awesome-GEE](https://github.com/opengeos/Awesome-GEE) | 📐 实践 | 评估 | Google Earth Engine 学习资源与工具导航 | 1.2k | 2026-08-31 |
+| [satellite-image-deep-learning/datasets](https://github.com/satellite-image-deep-learning/datasets) | 🔭 前沿 | 评估 | 卫星与航拍影像深度学习数据集的精选索引 | 1.2k | 2026-09-26 |
 
 <a id="knowledge-base"></a>
 
@@ -201,15 +228,21 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 🛠 工具 | 评估 | 深度文档理解的 RAG 引擎 | 91.3k | 2026-09-26 |
 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | 🛠 工具 | 评估 | 数据接入与检索框架 | 52.3k | 2026-09-25 |
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | 🛠 工具 | 评估 | 生产级 RAG / 搜索管线 | 26.6k | 2026-09-25 |
+| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | 🔭 前沿 | 评估 | 基于 VLM 的视觉文档检索，免去 OCR 流水线 | 2.8k | 2026-09-21 |
 
 ### 文档解析
 
 | 项目 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | 🛠 工具 | 评估 | Office / PDF 等文件转 Markdown | 187.1k | 2026-09-21 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 🛠 工具 | 评估 | 为 Agent 与 RAG 提供干净网页数据的抓取引擎 | 185.5k | 2026-09-27 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | 🛠 工具 | 评估 | 多语种 OCR 与版面分析 | 90.2k | 2026-09-16 |
+| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | 🛠 工具 | 评估 | 网页转 LLM 友好 Markdown，服务 RAG 数据入库 | 84.4k | 2026-09-25 |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | 🛠 工具 | 评估 | PDF → Markdown，公式 / 表格识别强 | 80.7k | 2026-09-24 |
 | [docling-project/docling](https://github.com/docling-project/docling) | 🛠 工具 | 评估 | IBM 文档解析与转换 | 68.0k | 2026-09-25 |
+| [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | 🛠 工具 | 评估 | 高精度 PDF 解析，带坐标溯源，适合 RAG 入库 | 29.4k | 2026-09-23 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | 🛠 工具 | 评估 | 成熟的多格式文档预处理 ETL，服务 LLM 入库 | 15.5k | 2026-09-27 |
+| [enoch3712/ExtractThinker](https://github.com/enoch3712/ExtractThinker) | 🛠 工具 | 评估 | 用 LLM 把复杂文档抽取成经过校验的结构化数据 | 1.6k | 2026-09-16 |
 
 ### 向量数据库
 
@@ -225,6 +258,7 @@ Origen 关注的前沿技术、工程实践与工具精选。每一项都写明�
 | [open-webui/open-webui](https://github.com/open-webui/open-webui) | 🛠 工具 | 评估 | 自托管 AI 对话 + 知识库界面 | 153.2k | 2026-09-26 |
 | [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | 🛠 工具 | 评估 | 一体化私有知识库应用 | 66.5k | 2026-09-26 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | 🛠 工具 | 评估 | 知识库问答 + 工作流编排 | 29.7k | 2026-09-25 |
+| [yuezhiai/jonex](https://github.com/yuezhiai/jonex) | 🛠 工具 | 评估 | 融合多模态解析与本体的企业知识库平台 | 1.2k | 2026-09-22 |
 
 ### RAG 工程实践
 
