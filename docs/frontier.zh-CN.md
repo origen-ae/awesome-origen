@@ -3,7 +3,7 @@
 
 [← 返回总览](../README.zh-CN.md) · [English](frontier.md)
 
-## 评估 (14)
+## 评估 (19)
 
 | 项目 | 分类 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,11 @@
 | [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) 💤一年未更新 | VLM 视觉语言模型 / 开源 VLM 模型 | 🔭 前沿 | 评估 | 书生多模态模型系列 | 10.2k | 2025-09-22 |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | Ontology 与知识图谱 / GraphRAG 与 Agent 记忆 | 🔭 前沿 | 评估 | 知识增强生成，逻辑推理问答 | 9.1k | 2026-01-28 |
 | [deepseek-ai/DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2) 💤一年未更新 | VLM 视觉语言模型 / 开源 VLM 模型 | 🔭 前沿 | 评估 | MoE 架构 VLM | 5.4k | 2025-02-26 |
+| [sacridini/Awesome-Geospatial](https://github.com/sacridini/Awesome-Geospatial) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 地理空间工具与资源的全景索引 | 5.3k | 2026-09-23 |
+| [jingyi0000/VLM_survey](https://github.com/jingyi0000/VLM_survey) | VLM 视觉语言模型 / 论文与资料合集 | 🔭 前沿 | 评估 | TPAMI 综述配套，系统梳理视觉任务 VLM | 3.1k | 2026-09-16 |
+| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | 知识库与 RAG / RAG 引擎与框架 | 🔭 前沿 | 评估 | 基于 VLM 的视觉文档检索，免去 OCR 流水线 | 2.8k | 2026-09-21 |
+| [wenhwu/awesome-remote-sensing-change-detection](https://github.com/wenhwu/awesome-remote-sensing-change-detection) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 遥感变化检测数据集与方法索引，持续更新 | 2.3k | 2026-09-09 |
 | [Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 遥感基础模型论文合集 | 1.9k | 2026-05-07 |
+| [satellite-image-deep-learning/datasets](https://github.com/satellite-image-deep-learning/datasets) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 卫星与航拍影像深度学习数据集的精选索引 | 1.2k | 2026-09-26 |
 | [mbzuai-oryx/GeoChat](https://github.com/mbzuai-oryx/GeoChat) 💤一年未更新 | 遥感与地理空间 / 遥感基础模型与遥感 VLM | 🔭 前沿 | 评估 | 遥感领域 VLM | 757 | 2024-11-28 |
 | [ChenDelong1999/RemoteCLIP](https://github.com/ChenDelong1999/RemoteCLIP) 💤一年未更新 | 遥感与地理空间 / 遥感基础模型与遥感 VLM | 🔭 前沿 | 评估 | 遥感视觉-语言基础模型 | 594 | 2024-06-27 |

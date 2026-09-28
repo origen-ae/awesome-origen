@@ -3,7 +3,7 @@
 
 [← Back to overview](../README.md) · [简体中文](frontier.zh-CN.md)
 
-## Assess (14)
+## Assess (19)
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,11 @@
 | [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | InternVL multimodal model series | 10.2k | 2025-09-22 |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🔭 Frontier | Assess | Knowledge-augmented generation for logical reasoning QA | 9.1k | 2026-01-28 |
 | [deepseek-ai/DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | MoE-architecture VLM | 5.4k | 2025-02-26 |
+| [sacridini/Awesome-Geospatial](https://github.com/sacridini/Awesome-Geospatial) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Comprehensive index of geospatial tools, data and learning resources | 5.3k | 2026-09-23 |
+| [jingyi0000/VLM_survey](https://github.com/jingyi0000/VLM_survey) | Vision-Language Models / Papers & Resource Collections | 🔭 Frontier | Assess | TPAMI survey collection of VLMs for visual recognition tasks | 3.1k | 2026-09-16 |
+| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Knowledge Bases & RAG / RAG Engines & Frameworks | 🔭 Frontier | Assess | VLM-based visual document retrieval that skips OCR pipelines | 2.8k | 2026-09-21 |
+| [wenhwu/awesome-remote-sensing-change-detection](https://github.com/wenhwu/awesome-remote-sensing-change-detection) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Up-to-date index of change detection datasets and methods | 2.3k | 2026-09-09 |
 | [Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Remote sensing foundation model paper collection | 1.9k | 2026-05-07 |
+| [satellite-image-deep-learning/datasets](https://github.com/satellite-image-deep-learning/datasets) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Curated index of satellite and aerial deep learning datasets | 1.2k | 2026-09-26 |
 | [mbzuai-oryx/GeoChat](https://github.com/mbzuai-oryx/GeoChat) 💤stale 1y+ | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🔭 Frontier | Assess | VLM for remote sensing | 757 | 2024-11-28 |
 | [ChenDelong1999/RemoteCLIP](https://github.com/ChenDelong1999/RemoteCLIP) 💤stale 1y+ | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🔭 Frontier | Assess | Vision-language foundation model for remote sensing | 594 | 2024-06-27 |
