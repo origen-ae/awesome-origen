@@ -7,8 +7,8 @@
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🔭 Frontier | Assess | Lightweight GraphRAG with incremental updates | 39.9k | 2026-09-26 |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🔭 Frontier | Assess | Knowledge-graph-based RAG | 36.1k | 2026-09-24 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🔭 Frontier | Assess | Lightweight GraphRAG with incremental updates | 39.9k | 2026-09-27 |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🔭 Frontier | Assess | Knowledge-graph-based RAG | 36.1k | 2026-09-28 |
 | [OpenBMB/MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V) | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | VLM deployable on edge devices | 26.5k | 2026-09-08 |
 | [haotian-liu/LLaVA](https://github.com/haotian-liu/LLaVA) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | Foundational work on visual instruction tuning | 25.0k | 2024-08-12 |
 | [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | Qwen multimodal model series | 20.0k | 2026-01-30 |
@@ -20,4 +20,4 @@
 | [deepseek-ai/DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | MoE-architecture VLM | 5.4k | 2025-02-26 |
 | [Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Remote sensing foundation model paper collection | 1.9k | 2026-05-07 |
 | [mbzuai-oryx/GeoChat](https://github.com/mbzuai-oryx/GeoChat) 💤stale 1y+ | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🔭 Frontier | Assess | VLM for remote sensing | 757 | 2024-11-28 |
-| [ChenDelong1999/RemoteCLIP](https://github.com/ChenDelong1999/RemoteCLIP) 💤stale 1y+ | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🔭 Frontier | Assess | Vision-language foundation model for remote sensing | 594 | 2024-06-27 |
+| [ChenDelong1999/RemoteCLIP](https://github.com/ChenDelong1999/RemoteCLIP) 💤stale 1y+ | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🔭 Frontier | Assess | Vision-language foundation model for remote sensing | 595 | 2024-06-27 |
