@@ -3,13 +3,20 @@
 
 [← Back to overview](../README.md) · [简体中文](practice.zh-CN.md)
 
-## Assess (6)
+## Assess (13)
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Agent skill curbing over-engineering in AI-generated code | 154.9k | 2026-10-05 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Large collection of runnable agent and RAG reference apps | 140.7k | 2026-09-30 |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Structured LLM learning roadmap | 83.1k | 2026-02-05 |
+| [datawhalechina/hello-agents](https://github.com/datawhalechina/hello-agents) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Systematic Chinese tutorial for building agents from scratch | 81.7k | 2026-09-29 |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Prompt / context engineering guide | 78.6k | 2026-03-11 |
 | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official OpenAI engineering recipes | 76.2k | 2026-09-26 |
 | [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official Claude engineering recipes | 53.0k | 2026-09-24 |
 | [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Knowledge Bases & RAG / RAG Engineering Practices | 📐 Practice | Assess | Notebook collection of advanced RAG techniques | 29.6k | 2026-09-21 |
 | [satellite-image-deep-learning/techniques](https://github.com/satellite-image-deep-learning/techniques) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Survey of deep learning techniques for satellite imagery | 10.3k | 2026-09-19 |
+| [jingyaogong/minimind-v](https://github.com/jingyaogong/minimind-v) | Vision-Language Models / Training, Fine-tuning & Evaluation | 📐 Practice | Assess | Minimal from-scratch VLM training tutorial on consumer GPUs | 8.7k | 2026-09-22 |
+| [sacridini/Awesome-Geospatial](https://github.com/sacridini/Awesome-Geospatial) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Comprehensive geospatial tools and resources index for quick lookup | 5.3k | 2026-09-29 |
+| [2U1/Qwen-VL-Series-Finetune](https://github.com/2U1/Qwen-VL-Series-Finetune) | Vision-Language Models / Training, Fine-tuning & Evaluation | 📐 Practice | Assess | Practical SFT/DPO/GRPO fine-tuning recipes for Qwen-VL models | 2.0k | 2026-09-09 |
+| [opengeos/Awesome-GEE](https://github.com/opengeos/Awesome-GEE) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Curated Google Earth Engine learning and tooling resources | 1.2k | 2026-08-31 |
