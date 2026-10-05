@@ -7,9 +7,9 @@
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
-| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Structured LLM learning roadmap | 83.1k | 2026-02-05 |
-| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Prompt / context engineering guide | 78.6k | 2026-03-11 |
-| [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official OpenAI engineering recipes | 76.2k | 2026-09-26 |
-| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official Claude engineering recipes | 53.0k | 2026-09-24 |
-| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Knowledge Bases & RAG / RAG Engineering Practices | 📐 Practice | Assess | Notebook collection of advanced RAG techniques | 29.6k | 2026-09-21 |
-| [satellite-image-deep-learning/techniques](https://github.com/satellite-image-deep-learning/techniques) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Survey of deep learning techniques for satellite imagery | 10.3k | 2026-09-19 |
+| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Structured LLM learning roadmap | 83.3k | 2026-02-05 |
+| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Prompt / context engineering guide | 78.8k | 2026-03-11 |
+| [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official OpenAI engineering recipes | 76.4k | 2026-10-05 |
+| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official Claude engineering recipes | 53.2k | 2026-09-28 |
+| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Knowledge Bases & RAG / RAG Engineering Practices | 📐 Practice | Assess | Notebook collection of advanced RAG techniques | 29.7k | 2026-09-21 |
+| [satellite-image-deep-learning/techniques](https://github.com/satellite-image-deep-learning/techniques) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Survey of deep learning techniques for satellite imagery | 10.3k | 2026-09-26 |
