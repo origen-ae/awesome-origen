@@ -3,7 +3,7 @@
 
 [← 返回总览](../README.zh-CN.md) · [English](frontier.md)
 
-## 评估 (14)
+## 评估 (17)
 
 | 项目 | 分类 | 类型 | 雷达 | 为什么关注 | ⭐ | 最近推送 |
 |---|---|---|---|---|---|---|
@@ -18,6 +18,9 @@
 | [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) 💤一年未更新 | VLM 视觉语言模型 / 开源 VLM 模型 | 🔭 前沿 | 评估 | 书生多模态模型系列 | 10.2k | 2025-09-22 |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | Ontology 与知识图谱 / GraphRAG 与 Agent 记忆 | 🔭 前沿 | 评估 | 知识增强生成，逻辑推理问答 | 9.1k | 2026-01-28 |
 | [deepseek-ai/DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2) 💤一年未更新 | VLM 视觉语言模型 / 开源 VLM 模型 | 🔭 前沿 | 评估 | MoE 架构 VLM | 5.4k | 2025-02-26 |
+| [jingyi0000/VLM_survey](https://github.com/jingyi0000/VLM_survey) | VLM 视觉语言模型 / 论文与资料合集 | 🔭 前沿 | 评估 | TPAMI 综述配套的视觉任务 VLM 论文索引 | 3.1k | 2026-10-02 |
+| [wenhwu/awesome-remote-sensing-change-detection](https://github.com/wenhwu/awesome-remote-sensing-change-detection) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 遥感变化检测数据集与方法资料汇总 | 2.3k | 2026-09-09 |
 | [Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 遥感基础模型论文合集 | 1.9k | 2026-05-07 |
+| [satellite-image-deep-learning/datasets](https://github.com/satellite-image-deep-learning/datasets) | 遥感与地理空间 / 论文与资料合集 | 🔭 前沿 | 评估 | 卫星与航空影像深度学习数据集汇总 | 1.2k | 2026-09-26 |
 | [mbzuai-oryx/GeoChat](https://github.com/mbzuai-oryx/GeoChat) 💤一年未更新 | 遥感与地理空间 / 遥感基础模型与遥感 VLM | 🔭 前沿 | 评估 | 遥感领域 VLM | 757 | 2024-11-28 |
 | [ChenDelong1999/RemoteCLIP](https://github.com/ChenDelong1999/RemoteCLIP) 💤一年未更新 | 遥感与地理空间 / 遥感基础模型与遥感 VLM | 🔭 前沿 | 评估 | 遥感视觉-语言基础模型 | 594 | 2024-06-27 |
