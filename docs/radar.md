@@ -3,28 +3,42 @@
 
 [← Back to overview](../README.md) · [简体中文](radar.zh-CN.md)
 
-## Assess (assess) — Worth watching and researching; not yet used (67)
+## Assess (assess) — Worth watching and researching; not yet used (104)
 
 | Project | Category | Kind | Radar | Why we care | ⭐ | Last push |
 |---|---|---|---|---|---|---|
+| [morluto/rea](https://github.com/morluto/rea) | AI Native / MCP & Tool Ecosystem | 🛠 Tool | Assess | MCP server bringing binary and app reverse engineering to agents | 384.7k | 2026-10-25 |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | Skills, memory and security harness for coding agents | 288.9k | 2026-10-25 |
+| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | DeepSeek's official plugin-based open-source agent harness | 261.4k | 2026-10-23 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | Self-improving autonomous agent with built-in skill learning loop | 257.1k | 2026-10-26 |
 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | AI Native / LLM App Platforms | 🛠 Tool | Assess | Workflow automation with built-in AI nodes | 206.0k | 2026-09-26 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | AI Native / MCP & Tool Ecosystem | 🛠 Tool | Assess | Turns web pages into LLM-ready data for agents | 195.3k | 2026-10-26 |
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | Convert Office / PDF and more to Markdown | 187.1k | 2026-09-21 |
 | [ollama/ollama](https://github.com/ollama/ollama) | AI Native / Inference & Serving | 🛠 Tool | Assess | Run local models with one command | 181.8k | 2026-09-25 |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | Agent skill curbing over-engineering in AI-generated code | 176.2k | 2026-10-18 |
 | [langgenius/dify](https://github.com/langgenius/dify) | AI Native / LLM App Platforms | 🛠 Tool | Assess | Visual LLM app / workflow platform | 157.2k | 2026-09-26 |
 | [open-webui/open-webui](https://github.com/open-webui/open-webui) | Knowledge Bases & RAG / Knowledge Base Apps | 🛠 Tool | Assess | Self-hosted AI chat + knowledge base UI | 153.2k | 2026-09-26 |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | De facto standard framework for LLM agent development | 148.4k | 2026-10-25 |
 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | Terminal AI coding agent with skill / hook / MCP extensibility | 148.2k | 2026-09-26 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Large runnable collection of agent and RAG reference apps | 143.1k | 2026-10-22 |
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Codebase-to-knowledge-graph context for coding agents | 135.3k | 2026-10-23 |
 | [browser-use/browser-use](https://github.com/browser-use/browser-use) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | Lets agents operate a web browser | 116.4k | 2026-09-26 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Cross-session persistent memory for coding agents | 103.1k | 2026-10-25 |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | AI Native / Inference & Serving | 🛠 Tool | Assess | High-throughput LLM inference serving | 92.7k | 2026-09-26 |
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Knowledge Bases & RAG / RAG Engines & Frameworks | 🛠 Tool | Assess | RAG engine with deep document understanding | 91.3k | 2026-09-26 |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | AI Native / MCP & Tool Ecosystem | 🛠 Tool | Assess | Official MCP reference server collection | 90.6k | 2026-09-22 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | Multilingual OCR and layout analysis | 90.2k | 2026-09-16 |
 | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | AI Native / AI Coding & Autonomous Agents | 🛠 Tool | Assess | Open-source autonomous software engineering agent | 89.2k | 2026-09-26 |
+| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | Turns web pages into LLM-ready Markdown for RAG ingestion | 86.3k | 2026-10-22 |
+| [datawhalechina/hello-agents](https://github.com/datawhalechina/hello-agents) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Systematic Chinese tutorial for building agents from scratch | 84.5k | 2026-10-13 |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Structured LLM learning roadmap | 83.1k | 2026-02-05 |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | PDF → Markdown with strong formula / table recognition | 80.7k | 2026-09-24 |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Prompt / context engineering guide | 78.6k | 2026-03-11 |
+| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | AI Native / Observability, Evaluation & Gateways | 🛠 Tool | Assess | Context compression proxy cutting agent token costs | 77.8k | 2026-10-24 |
 | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | AI Native / Engineering Practices & Learning | 📐 Practice | Assess | Official OpenAI engineering recipes | 76.2k | 2026-09-26 |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | All-in-one LLM / VLM fine-tuning | 75.0k | 2026-09-14 |
 | [docling-project/docling](https://github.com/docling-project/docling) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | IBM document parsing and conversion | 68.0k | 2026-09-25 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Production-grade long-term memory layer for agents | 67.8k | 2026-10-23 |
 | [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | Knowledge Bases & RAG / Knowledge Base Apps | 🛠 Tool | Assess | All-in-one private knowledge base app | 66.5k | 2026-09-26 |
 | [microsoft/autogen](https://github.com/microsoft/autogen) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | Conversational multi-agent collaboration framework | 61.2k | 2026-04-15 |
 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | AI Native / Observability, Evaluation & Gateways | 🛠 Tool | Assess | Unified gateway for calling many LLM providers | 59.6k | 2026-09-26 |
@@ -40,6 +54,7 @@
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | Knowledge Bases & RAG / Vector Databases | 🛠 Tool | Assess | Vector database in Rust with strong filtered search | 34.8k | 2026-09-26 |
 | [getzep/graphiti](https://github.com/getzep/graphiti) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Temporal knowledge graph, well suited for agent memory | 31.2k | 2026-09-26 |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Knowledge-graph memory layer for agents | 31.0k | 2026-09-26 |
+| [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | High-accuracy PDF parsing with bounding boxes for RAG | 30.0k | 2026-10-23 |
 | [labring/FastGPT](https://github.com/labring/FastGPT) | Knowledge Bases & RAG / Knowledge Base Apps | 🛠 Tool | Assess | Knowledge base QA + workflow orchestration | 29.7k | 2026-09-25 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | AI Native / Agent Frameworks & Orchestration | 🛠 Tool | Assess | Lightweight multi-agent framework; handoff / guardrail design worth studying | 29.7k | 2026-09-25 |
 | [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Knowledge Bases & RAG / RAG Engineering Practices | 📐 Practice | Assess | Notebook collection of advanced RAG techniques | 29.6k | 2026-09-21 |
@@ -51,24 +66,46 @@
 | [BradyFU/Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) | Vision-Language Models / Papers & Resource Collections | 🔭 Frontier | Assess | Tracks multimodal LLM papers | 18.0k | 2026-09-18 |
 | [neo4j/neo4j](https://github.com/neo4j/neo4j) | Ontology & Knowledge Graphs / Graph Databases & Triple Stores | 🛠 Tool | Assess | Mainstream property graph database | 17.3k | 2026-09-22 |
 | [modelscope/ms-swift](https://github.com/modelscope/ms-swift) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | ModelScope LLM / multimodal training framework | 15.7k | 2026-09-26 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Knowledge Bases & RAG / Document Parsing | 🛠 Tool | Assess | Multi-format document ETL for LLM data preparation | 15.6k | 2026-10-25 |
+| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Context graph infrastructure with provenance for accountable AI | 14.2k | 2026-10-25 |
+| [CVHub520/X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | Foundation-model-assisted annotation for vision and multimodal data | 10.8k | 2026-10-25 |
 | [IDEA-Research/GroundingDINO](https://github.com/IDEA-Research/GroundingDINO) 💤stale 1y+ | Vision-Language Models / Vision Foundation Models (Segmentation / Detection) | 🔭 Frontier | Assess | Open-vocabulary object detection | 10.6k | 2024-08-12 |
 | [satellite-image-deep-learning/techniques](https://github.com/satellite-image-deep-learning/techniques) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Survey of deep learning techniques for satellite imagery | 10.3k | 2026-09-19 |
 | [OpenGVLab/InternVL](https://github.com/OpenGVLab/InternVL) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | InternVL multimodal model series | 10.2k | 2025-09-22 |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🔭 Frontier | Assess | Knowledge-augmented generation for logical reasoning QA | 9.1k | 2026-01-28 |
+| [jingyaogong/minimind-v](https://github.com/jingyaogong/minimind-v) | Vision-Language Models / Training, Fine-tuning & Evaluation | 📐 Practice | Assess | Minimal from-scratch VLM training tutorial on consumer GPUs | 8.8k | 2026-09-22 |
 | [OSGeo/gdal](https://github.com/OSGeo/gdal) | Remote Sensing & Geospatial / Geospatial Data Infrastructure | 🛠 Tool | Assess | The foundation of raster / vector data processing | 6.1k | 2026-09-22 |
+| [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | AI Native / Inference & Serving | 🛠 Tool | Assess | Local VLM inference and fine-tuning on Apple Silicon | 5.7k | 2026-10-24 |
+| [obss/sahi](https://github.com/obss/sahi) | Remote Sensing & Geospatial / RS Deep Learning Tools | 🛠 Tool | Assess | Sliced inference for small objects in large remote sensing images | 5.6k | 2026-10-16 |
 | [deepseek-ai/DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2) 💤stale 1y+ | Vision-Language Models / Open VLMs | 🔭 Frontier | Assess | MoE-architecture VLM | 5.4k | 2025-02-26 |
+| [sacridini/Awesome-Geospatial](https://github.com/sacridini/Awesome-Geospatial) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Comprehensive geospatial tools index for GIS and remote sensing | 5.3k | 2026-10-17 |
+| [EvolvingLMMs-Lab/lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | Unified, reproducible evaluation toolkit for multimodal models | 4.5k | 2026-10-22 |
 | [open-compass/VLMEvalKit](https://github.com/open-compass/VLMEvalKit) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | VLM evaluation toolkit | 4.4k | 2026-09-24 |
 | [torchgeo/torchgeo](https://github.com/torchgeo/torchgeo) | Remote Sensing & Geospatial / RS Deep Learning Tools | 🛠 Tool | Assess | PyTorch geospatial datasets / samplers / models | 4.2k | 2026-09-25 |
 | [opengeos/segment-geospatial](https://github.com/opengeos/segment-geospatial) | Remote Sensing & Geospatial / RS Deep Learning Tools | 🛠 Tool | Assess | SAM for remote sensing image segmentation | 4.1k | 2026-09-21 |
+| [gee-community/geemap](https://github.com/gee-community/geemap) | Remote Sensing & Geospatial / Geospatial Data Infrastructure | 🛠 Tool | Assess | Python interactive analysis layer for Google Earth Engine | 4.0k | 2026-10-23 |
 | [opengeos/leafmap](https://github.com/opengeos/leafmap) | Remote Sensing & Geospatial / Geospatial Data Infrastructure | 🛠 Tool | Assess | Interactive map analysis in notebooks | 3.8k | 2026-09-21 |
+| [opengeos/geoai](https://github.com/opengeos/geoai) | Remote Sensing & Geospatial / RS Deep Learning Tools | 🛠 Tool | Assess | End-to-end deep learning toolkit for remote sensing imagery | 3.4k | 2026-10-23 |
+| [jingyi0000/VLM_survey](https://github.com/jingyi0000/VLM_survey) | Vision-Language Models / Papers & Resource Collections | 🔭 Frontier | Assess | TPAMI survey index of VLMs for vision tasks | 3.1k | 2026-10-05 |
+| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Ontology & Knowledge Graphs / GraphRAG & Agent Memory | 🛠 Tool | Assess | Ontology-grounded graph for governing and grounding AI agents | 2.8k | 2026-10-23 |
 | [rasterio/rasterio](https://github.com/rasterio/rasterio) | Remote Sensing & Geospatial / Geospatial Data Infrastructure | 🛠 Tool | Assess | Pythonic raster data I/O | 2.6k | 2026-09-26 |
 | [RDFLib/rdflib](https://github.com/RDFLib/rdflib) | Ontology & Knowledge Graphs / Ontology Modeling & Semantic Web | 🛠 Tool | Assess | Foundational Python RDF / SPARQL library | 2.5k | 2026-09-23 |
+| [wenhwu/awesome-remote-sensing-change-detection](https://github.com/wenhwu/awesome-remote-sensing-change-detection) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Curated datasets and methods for remote sensing change detection | 2.4k | 2026-09-09 |
 | [open-mmlab/mmrotate](https://github.com/open-mmlab/mmrotate) 💤stale 1y+ | Remote Sensing & Geospatial / RS Deep Learning Tools | 🛠 Tool | Assess | Rotated object detection (common in remote sensing) | 2.2k | 2024-09-28 |
+| [opengeos/RustGIS](https://github.com/opengeos/RustGIS) | Remote Sensing & Geospatial / Geospatial Data Infrastructure | 🛠 Tool | Assess | Lightweight cross-platform desktop and web GIS | 2.0k | 2026-10-26 |
+| [2U1/Qwen-VL-Series-Finetune](https://github.com/2U1/Qwen-VL-Series-Finetune) | Vision-Language Models / Training, Fine-tuning & Evaluation | 🛠 Tool | Assess | Lightweight SFT/DPO/GRPO fine-tuning for Qwen-VL series | 2.0k | 2026-09-09 |
 | [oxigraph/oxigraph](https://github.com/oxigraph/oxigraph) | Ontology & Knowledge Graphs / Graph Databases & Triple Stores | 🛠 Tool | Assess | Lightweight SPARQL graph database in Rust | 2.0k | 2026-09-24 |
 | [Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models](https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Remote sensing foundation model paper collection | 1.9k | 2026-05-07 |
+| [EtienneLescot/n8n-as-code](https://github.com/EtienneLescot/n8n-as-code) | AI Native / MCP & Tool Ecosystem | 🛠 Tool | Assess | Gives AI agents grounded n8n context and GitOps workflow editing | 1.6k | 2026-10-22 |
 | [protegeproject/protege](https://github.com/protegeproject/protege) | Ontology & Knowledge Graphs / Ontology Modeling & Semantic Web | 🛠 Tool | Assess | Classic OWL ontology editor | 1.5k | 2026-09-25 |
+| [yuezhiai/jonex](https://github.com/yuezhiai/jonex) | Knowledge Bases & RAG / Knowledge Base Apps | 🛠 Tool | Assess | Enterprise knowledge platform combining ontology, LLM wiki and multimodal parsing | 1.5k | 2026-10-21 |
 | [apache/jena](https://github.com/apache/jena) | Ontology & Knowledge Graphs / Graph Databases & Triple Stores | 🛠 Tool | Assess | Java semantic web framework + Fuseki triple store | 1.5k | 2026-09-23 |
+| [fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies) | Ontology & Knowledge Graphs / Ontology Modeling & Semantic Web | 🛠 Tool | Assess | Verifiable change management for production OWL ontologies | 1.4k | 2026-10-23 |
+| [opengeos/Awesome-GEE](https://github.com/opengeos/Awesome-GEE) | Remote Sensing & Geospatial / Papers & Resource Collections | 📐 Practice | Assess | Curated Google Earth Engine learning and tooling resources | 1.3k | 2026-10-26 |
+| [google/schema-dts](https://github.com/google/schema-dts) | Ontology & Knowledge Graphs / Ontology Modeling & Semantic Web | 🛠 Tool | Assess | Type-safe Schema.org JSON-LD authoring in TypeScript | 1.3k | 2026-10-02 |
+| [satellite-image-deep-learning/datasets](https://github.com/satellite-image-deep-learning/datasets) | Remote Sensing & Geospatial / Papers & Resource Collections | 🔭 Frontier | Assess | Comprehensive index of satellite and aerial deep learning datasets | 1.2k | 2026-10-22 |
 | [developmentseed/titiler](https://github.com/developmentseed/titiler) | Remote Sensing & Geospatial / Geospatial Data Infrastructure | 🛠 Tool | Assess | Dynamic tile server (COG / STAC) | 1.2k | 2026-09-23 |
+| [ruc-datalab/EvoOntology](https://github.com/ruc-datalab/EvoOntology) | Ontology & Knowledge Graphs / Ontology Modeling & Semantic Web | 🔭 Frontier | Assess | Self-evolving ontology layer bridging data agents and heterogeneous data | 1.0k | 2026-10-09 |
 | [torchgeo/terratorch](https://github.com/torchgeo/terratorch) | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🛠 Tool | Assess | Fine-tuning toolkit for geospatial foundation models (Prithvi, etc.) | 864 | 2026-09-25 |
 | [mbzuai-oryx/GeoChat](https://github.com/mbzuai-oryx/GeoChat) 💤stale 1y+ | Remote Sensing & Geospatial / RS Foundation Models & RS VLMs | 🔭 Frontier | Assess | VLM for remote sensing | 757 | 2024-11-28 |
 | [linkml/linkml](https://github.com/linkml/linkml) | Ontology & Knowledge Graphs / Ontology Modeling & Semantic Web | 🛠 Tool | Assess | Define data models / ontologies in YAML, generate many schemas | 632 | 2026-09-25 |
