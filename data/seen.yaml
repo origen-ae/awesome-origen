@@ -1,0 +1,40 @@
+- {repo: affaan-m/ECC, at: '2026-11-09', relevant: true, reason: 影响力极高且活跃维护，覆盖 Claude Code、Codex、Cursor 等多种编程 Agent，是这一方向的代表性增强工具。}
+- {repo: CVHub520/X-AnyLabeling, at: '2026-11-09', relevant: true, reason: 成熟的 AI 辅助标注工具，持续集成 SAM、VLM 等最新模型，对视觉和 VLM 的数据构建很有价值。}
+- {repo: datavane/tis, at: '2026-11-09', relevant: false, reason: 核心是基于 DataX/Flink-CDC 的 ETL 平台，Ontology 和 GraphRAG 只是外挂功能，在本体建模或知识图谱方向都不算代表性项目。}
+- {repo: datawhalechina/hello-agents, at: '2026-11-09', relevant: true, reason: Datawhale 出品、8.6 万星的高质量 Agent 教程，覆盖范式、框架、记忆、Agentic RL 等，属于优秀学习资料。}
+- {repo: deeplethe/utopia, at: '2026-11-09', relevant: true, reason: 把时序知识图谱、本体治理和 GraphRAG 结合起来，支持离线部署，增长迅速，契合 Agent 记忆方向。}
+- {repo: deepseek-ai/deepseek-harness, at: '2026-11-09', relevant: true, reason: DeepSeek 官方出品，关注度极高，采用全插件化架构，是开源 Agent harness 的代表项目。}
+- {repo: DietrichGebert/ponytail, at: '2026-11-09', relevant: true, reason: 面向 Claude Code 等多种编程 Agent 的技能包，影响力极大并附可复现基准，可作为编程 Agent 提示/技能实践参考。}
+- {repo: EtienneLescot/n8n-as-code, at: '2026-11-09', relevant: true, reason: 把 n8n 节点知识以 Skills 和 CLI 形式提供给 Agent，上升较快（上过 Trendshift），属于 Agent 工具生态中有特色的项目。}
+- {repo: EvolvingLMMs-Lab/lmms-eval, at: '2026-11-09', relevant: true, reason: 多模态评测领域事实标准之一，覆盖上百任务和数十个模型后端，持续维护。}
+- {repo: fabio-rovai/open-ontologies, at: '2026-11-09', relevant: true, reason: Rust 实现的 OWL/SHACL 本体工程工具，支持变更影响分析、Lean 形式化证明和 MCP，活跃且增长快，属本体建模方向的代表性新工具。}
+- {repo: firecrawl/firecrawl, at: '2026-11-09', relevant: true, reason: 近 20 万星、开源可自托管的网页数据 API，是 RAG 与 Agent 获取网页上下文的主流工具。}
+- {repo: gee-community/geemap, at: '2026-11-09', relevant: true, reason: NASA 资助、成熟且广泛使用的 GEE Python 工具包，是遥感数据分析基础设施的代表项目。}
+- {repo: Graphify-Labs/graphify, at: '2026-11-09', relevant: true, reason: 星数极高、增长迅速，基于 AST 构建可解释的代码知识图谱，属于 GraphRAG 的代表性应用。}
+- {repo: headroomlabs-ai/headroom, at: '2026-11-09', relevant: true, reason: 以库、代理和 MCP 形式提供本地上下文压缩，热度极高且有实测数据，是 LLM 网关/成本优化方向的代表性工具。}
+- {repo: HelixDB/helix-foundry, at: '2026-11-09', relevant: true, reason: 开源的企业数据本体化平台，用 Agent 生成本体并加载到 HelixDB 支持溯源问答，贴合本体建模方向且活跃。}
+- {repo: illuin-tech/colpali, at: '2026-11-09', relevant: true, reason: ColPali 是视觉文档检索的开创性研究代码，影响很大；虽然 colpali-engine 包已弃用，但仓库仍保留，供研究和复现参考。}
+- {repo: jingyaogong/minimind-v, at: '2026-11-09', relevant: true, reason: 包含 VLM 结构、数据清洗、预训练和 SFT 的全流程代码，教学价值高，持续维护，社区认可度高。}
+- {repo: jingyi0000/VLM_survey, at: '2026-11-09', relevant: true, reason: 配套 TPAMI 高引综述的论文合集，持续更新，是 VLM 方向的代表性资料库。}
+- {repo: langchain-ai/langchain, at: '2026-11-09', relevant: true, reason: Agent 框架领域影响力最大的项目之一，生态完整、持续迭代。}
+- {repo: mem0ai/mem0, at: '2026-11-09', relevant: true, reason: Agent 记忆方向的头部项目，6.8 万星、维护活跃，并公开了记忆评测基准。}
+- {repo: mindee/doctr, at: '2026-11-09', relevant: true, reason: 成熟、维护活跃的 PyTorch OCR 库，支持检测、识别和版面分析，是文档解析的常用基础组件。}
+- {repo: Neywa-Labs/mlx-vlm, at: '2026-11-09', relevant: true, reason: MLX 生态中主流的 VLM 推理与微调库，模型支持广泛且持续更新，是 Mac 端 VLM 的代表性工具。}
+- {repo: NousResearch/hermes-agent, at: '2026-11-09', relevant: true, reason: Nous Research 出品、关注度极高且活跃维护的自主 Agent，内置技能自生成与跨会话记忆，具有代表性。}
+- {repo: NVIDIA-AI-Blueprints/video-search-and-summarization, at: '2026-11-09', relevant: true, reason: NVIDIA 官方维护的视频 Agent 参考实现，整合了 VLM、RAG 和 MCP，有很高的工程参考价值。}
+- {repo: obss/sahi, at: '2026-11-09', relevant: true, reason: 成熟且被广泛使用的切片推理库，可以直接用于卫星和遥感大图上的小目标检测。}
+- {repo: off-grid-ai/OGAM, at: '2026-11-09', relevant: true, reason: 基于 llama.cpp/whisper.cpp 等的端侧推理应用，覆盖 LLM、视觉、语音和文生图，开源且活跃，代表端侧部署方向。}
+- {repo: opendataloader-project/opendataloader-pdf, at: '2026-11-09', relevant: true, reason: 3 万星的 PDF 解析器，基准成绩领先，支持多语言 SDK，是 RAG 文档解析的主流选择之一。}
+- {repo: opengeos/Awesome-GEE, at: '2026-11-09', relevant: true, reason: 由 geemap 作者维护的 GEE 资源合集，持续更新，是遥感方向的代表性资料清单。}
+- {repo: opengeos/geoai, at: '2026-11-09', relevant: true, reason: opengeos 出品的成熟遥感 AI 库，覆盖数据获取、训练、推理与 QGIS 集成，有 JOSS 论文和活跃社区。}
+- {repo: opengeos/RustGIS, at: '2026-11-09', relevant: true, reason: opengeos 推出的纯 Rust GIS，支持桌面、WebAssembly 与 Python 绑定，增长迅速，属地理空间基础设施的新兴工具。}
+- {repo: sacridini/Awesome-Geospatial, at: '2026-11-09', relevant: true, reason: 高星且持续更新的地理空间 awesome 清单，覆盖遥感、GIS、深度学习等，是该方向代表性资料合集。}
+- {repo: satellite-image-deep-learning/datasets, at: '2026-11-09', relevant: true, reason: 遥感深度学习领域知名的数据集合集，持续更新，覆盖面广。}
+- {repo: semantica-agi/semantica, at: '2026-11-09', relevant: true, reason: 把知识图谱、本体、GraphRAG 和 Agent 记忆结合在一起，同时支持 RDF 和 LPG，增长快且维护活跃。}
+- {repo: Shubhamsaboo/awesome-llm-apps, at: '2026-11-09', relevant: true, reason: 影响力很大且持续更新，收录大量可以直接运行的 Agent、Skill 和 RAG 示例，适合作为工程实践参考。}
+- {repo: stablyai/orca, at: '2026-11-09', relevant: true, reason: 增长很快、维护活跃的编程 Agent 编排工具，支持 Claude Code、Codex 等多种 Agent 并行协作。}
+- {repo: trustgraph-ai/trustgraph, at: '2026-11-09', relevant: true, reason: 活跃维护的开源平台，结合本体、RDF/SHACL、GraphRAG 与 Agent 策略治理，契合本体与 GraphRAG 方向。}
+- {repo: unclecode/crawl4ai, at: '2026-11-09', relevant: true, reason: 8.7 万星、Apache-2.0 可自托管的 LLM 友好爬虫，虽 README 推广云服务，但开源核心是 RAG 数据摄取的代表性工具。}
+- {repo: Unstructured-IO/unstructured, at: '2026-11-09', relevant: true, reason: 成熟且广泛使用的开源文档 ETL 库，是 RAG 预处理环节的主流选择。}
+- {repo: wenhwu/awesome-remote-sensing-change-detection, at: '2026-11-09', relevant: true, reason: 变化检测这一遥感核心任务下最全面、更新及时的资料合集。}
+- {repo: yuezhiai/jonex, at: '2026-11-09', relevant: true, reason: 端到端企业知识库，打通多模态解析、本体与图检索，方向契合，维护活跃。}
