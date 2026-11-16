@@ -1,0 +1,40 @@
+- {repo: affaan-m/ECC, at: '2026-11-16', relevant: true, reason: 'Highly popular, actively maintained harness enhancement system for Claude Code, Codex and other coding agents.'}
+- {repo: CVHub520/X-AnyLabeling, at: '2026-11-16', relevant: true, reason: 'Mature, actively maintained labeling tool integrating the latest vision foundation models and VLMs for dataset building.'}
+- {repo: datavane/tis, at: '2026-11-16', relevant: false, reason: 核心是基于 Flink/DataX 的数据集成平台，Ontology 和 GraphRAG 只是附加功能，在本体建模或知识图谱方向都不算代表性项目。}
+- {repo: datawhalechina/hello-agents, at: '2026-11-16', relevant: true, reason: Datawhale 出品，8.7 万星，从原理讲到 Agentic RL，是高质量的 Agent 学习资料。}
+- {repo: deeplethe/utopia, at: '2026-11-16', relevant: true, reason: Fast-rising self-hosted temporal KG plus ontology system targeting agent memory and GraphRAG.}
+- {repo: deepseek-ai/deepseek-harness, at: '2026-11-16', relevant: true, reason: 'Official open-source agent harness from DeepSeek with massive traction, a representative new project.'}
+- {repo: DietrichGebert/ponytail, at: '2026-11-16', relevant: true, reason: 影响力极大的编程 Agent 技能包，附带基准对比，是 Agent 提示工程实践的代表，虽有商业引流但内容本身有价值。}
+- {repo: EtienneLescot/n8n-as-code, at: '2026-11-16', relevant: true, reason: 面向 Agent 的 n8n 技能与工具包，维护活跃、在 Trendshift 上升，属于 Agent 工具生态中的实用项目。}
+- {repo: EvolvingLMMs-Lab/lmms-eval, at: '2026-11-16', relevant: true, reason: 多模态评测事实标准工具之一，覆盖百余任务与大量模型，持续维护。}
+- {repo: fabio-rovai/open-ontologies, at: '2026-11-16', relevant: true, reason: Rust 实现的 OWL/SHACL 本体工程工具，结合形式化验证与 MCP，活跃且增长快，代表本体建模新方向。}
+- {repo: firecrawl/firecrawl, at: '2026-11-16', relevant: true, reason: 20 万星的头部开源网页数据 API，可自托管，常用于 RAG 和 Agent 的数据获取。}
+- {repo: gee-community/geemap, at: '2026-11-16', relevant: true, reason: GEE Python 生态的事实标准库，有 NASA 资助和 JOSS 论文，维护活跃。}
+- {repo: Graphify-Labs/graphify, at: '2026-11-16', relevant: true, reason: 十几万星、快速上升，以确定性 AST 解析构建代码知识图谱，是 GraphRAG 落地到代码场景的代表。}
+- {repo: headroomlabs-ai/headroom, at: '2026-11-16', relevant: true, reason: 以库/代理/MCP 形式提供上下文压缩，热度极高且活跃，属于 LLM 网关与成本优化代表工具。}
+- {repo: HelixDB/helix-foundry, at: '2026-11-16', relevant: true, reason: 将企业多源数据经 Agent 建模为本体并落入 HelixDB，可本地部署，是 AI 辅助本体构建的代表项目。}
+- {repo: illuin-tech/colpali, at: '2026-11-16', relevant: true, reason: ColPali 论文的官方训练与推理代码，开创视觉文档检索路线、影响很大；engine 包虽已弃用并迁移到 Sentence Transformers，但作为研究复现代码仍有收录价值。}
+- {repo: jingyaogong/minimind-v, at: '2026-11-16', relevant: true, reason: 'Popular, maintained educational codebase covering the full VLM pretrain and SFT pipeline.'}
+- {repo: jingyi0000/VLM_survey, at: '2026-11-16', relevant: true, reason: 配套 TPAMI 综述的论文合集，3 千余星且持续更新，是 VLM 方向的代表性资料。}
+- {repo: langchain-ai/langchain, at: '2026-11-16', relevant: true, reason: 约 15 万星，是 Agent 框架领域影响力最大、生态最完整的项目之一。}
+- {repo: mem0ai/mem0, at: '2026-11-16', relevant: true, reason: Agent 记忆方向的代表性项目，近 7 万星且持续活跃，有公开基准评测。}
+- {repo: mindee/doctr, at: '2026-11-16', relevant: true, reason: 6k+ star、仍在维护，是开源文档 OCR 和版面分析方向的代表性库。}
+- {repo: Neywa-Labs/mlx-vlm, at: '2026-11-16', relevant: true, reason: Mac 本地跑多模态模型的主流方案，支持模型多、更新快，是推理部署方向的代表工具。}
+- {repo: NousResearch/hermes-agent, at: '2026-11-16', relevant: true, reason: Nous Research 出品，影响力很大且活跃维护，是自主 Agent 方向的代表项目。}
+- {repo: NVIDIA-AI-Blueprints/video-search-and-summarization, at: '2026-11-16', relevant: true, reason: NVIDIA 官方蓝图，完整演示 VLM、RAG 与 MCP 在视频 Agent 中的工程落地，参考价值高。}
+- {repo: obss/sahi, at: '2026-11-16', relevant: true, reason: 'Widely used, well-maintained library for small-object detection in large satellite and aerial images.'}
+- {repo: off-grid-ai/OGAM, at: '2026-11-16', relevant: true, reason: 基于 llama.cpp/whisper.cpp 等的端侧推理应用，覆盖 LLM、视觉、语音与图像生成，活跃度高；虽有付费层但核心开源。}
+- {repo: opendataloader-project/opendataloader-pdf, at: '2026-11-16', relevant: true, reason: 3 万星，基准表现领先，支持多语言 SDK 与 OCR，是成熟的文档解析工具。}
+- {repo: opengeos/Awesome-GEE, at: '2026-11-16', relevant: true, reason: 由 geemap 作者维护的 GEE 资源合集，持续更新，是遥感云计算入门的代表性清单。}
+- {repo: opengeos/geoai, at: '2026-11-16', relevant: true, reason: opengeos 出品的成熟 GeoAI 库，覆盖数据下载、训练、推理与 QGIS 集成，有 JOSS 论文支撑。}
+- {repo: opengeos/RustGIS, at: '2026-11-16', relevant: true, reason: opengeos 推出的高性能开源 GIS，覆盖桌面、Web 与移动端，增长迅速，属于地理空间基础设施新势力。}
+- {repo: sacridini/Awesome-Geospatial, at: '2026-11-16', relevant: true, reason: 高星、持续维护的地理空间领域权威资源清单，覆盖遥感、GIS、深度学习等方向。}
+- {repo: satellite-image-deep-learning/datasets, at: '2026-11-16', relevant: true, reason: 持续更新的遥感数据集索引，覆盖 Sentinel、SAR 等多种来源，是遥感深度学习选数据的常用资料。}
+- {repo: semantica-agi/semantica, at: '2026-11-16', relevant: true, reason: 'Fast-rising graph-native framework combining KG, ontology management, GraphRAG and agent memory.'}
+- {repo: Shubhamsaboo/awesome-llm-apps, at: '2026-11-16', relevant: true, reason: 'Very popular, actively updated collection of hands-on agent, skill and RAG examples useful for learning.'}
+- {repo: stablyai/orca, at: '2026-11-16', relevant: true, reason: star 数极高且活跃，是多编程 Agent 并行编排方向快速上升的代表性工具。}
+- {repo: trustgraph-ai/trustgraph, at: '2026-11-16', relevant: true, reason: 把 RDF/OWL/SHACL 本体与 GraphRAG、Agent 结合，活跃维护，与本体加 GraphRAG 方向高度契合。}
+- {repo: unclecode/crawl4ai, at: '2026-11-16', relevant: true, reason: 8.7 万星的主流开源 LLM 爬虫，可自托管，是 RAG 数据采集的代表工具；云服务推广不影响开源核心的价值。}
+- {repo: Unstructured-IO/unstructured, at: '2026-11-16', relevant: true, reason: 1.5 万+ star、维护活跃，是 RAG 文档预处理领域的代表性开源库。}
+- {repo: wenhwu/awesome-remote-sensing-change-detection, at: '2026-11-16', relevant: true, reason: 变化检测方向最全面的资料合集之一，覆盖数据集、基础模型与竞赛，维护活跃。}
+- {repo: yuezhiai/jonex, at: '2026-11-16', relevant: true, reason: 端到端企业知识库平台，结合本体、Wiki 与 GraphRAG，活跃且增长较快，可作为知识库应用参考。}
